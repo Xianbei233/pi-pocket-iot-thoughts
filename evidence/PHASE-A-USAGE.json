@@ -1,0 +1,21 @@
+{
+  "phase": "A",
+  "role": "test",
+  "requestedProviderModel": "openai/gpt-6.1-sol",
+  "requestedThinking": "high",
+  "actualProviderModel": "not obtained",
+  "actualThinking": "not obtained",
+  "generation": "not obtained",
+  "input": "not obtained",
+  "cacheRead": "not obtained",
+  "cacheWrite": "not obtained",
+  "outputIncludingReasoning": "not obtained",
+  "totalInput": "not obtained",
+  "averageContext": "not obtained",
+  "maxContext": "not obtained",
+  "aggregateToolReturnBytes": "not obtained",
+  "source": "available host/tool receipts expose no session usage fields",
+  "fixtureFauxRequestCount": 23,
+  "fixtureFauxCountIsAgentUsage": false,
+  "noUsageProbe": true
+}

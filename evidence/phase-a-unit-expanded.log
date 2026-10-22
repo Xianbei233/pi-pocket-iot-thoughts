@@ -1,0 +1,120 @@
+✔ config defaults are exact and frozen (3.430412ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (2.224457ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.396623ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (22.739602ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (7.629781ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (19.945866ms)
+✔ empty/short/disabled and not-shorter preserve exact original (5.796717ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (8.335112ms)
+✖ fenced repeated code and factual tool output remain intact (14.619254ms)
+✔ pre-abort and active abort reject, do not return apparent success (6.735947ms)
+✔ concurrent calls cannot leak or reuse another input (3.64748ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (3.46226ms)
+✔ tool calls host defang and warns alongside untrusted result (2.643716ms)
+✔ factory config is read once and malformed env fails closed without echoing content (1.268883ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (15.9174ms)
+✔ caller abort cancels tool and does not retain listeners or timers (4.898833ms)
+✔ direct options reject unknown permissions (3.319853ms)
+✔ direct options reject array (0.557685ms)
+✔ direct options reject null (0.160287ms)
+✔ direct options reject inherited (0.162591ms)
+✔ direct options reject symbol key (0.707985ms)
+✔ input over configured max rejects even enabled=true (0.918977ms)
+✔ input over configured max rejects even enabled=false (0.539806ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (50.858129ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (106.04637ms)
+✔ identical text with opposing labels does not lose its negative semantics (16.689849ms)
+✔ conservative inference 尚未决定采用A。 (6.409577ms)
+✔ conservative inference 不支持采用A。 (8.445671ms)
+✔ conservative inference 计划采用A。 (7.939877ms)
+✔ unverified/verified-looking prose must never set verified true (5.660386ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (3.629252ms)
+✖ negative and undecided prose is conservatively labelled: We do not support option A. (8.502802ms)
+✖ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (10.074099ms)
+✖ negative and undecided prose is conservatively labelled: No decision has been made. (10.865265ms)
+✖ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.629376ms)
+ℹ tests 35
+ℹ suites 0
+ℹ pass 30
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1323.806451
+
+✖ failing tests:
+
+test at test/core.test.ts:181:1
+✖ fenced repeated code and factual tool output remain intact (14.619254ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'compacted'
+  - 'kept'
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/core.test.ts:190:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'compacted',
+    expected: 'kept',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:133:5
+✖ negative and undecided prose is conservatively labelled: We do not support option A. (8.502802ms)
+  AssertionError [ERR_ASSERTION]: We do not support option A. -> support
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:140:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:133:5
+✖ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (10.074099ms)
+  AssertionError [ERR_ASSERTION]: We have not yet decided whether to choose A. -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:140:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:133:5
+✖ negative and undecided prose is conservatively labelled: No decision has been made. (10.865265ms)
+  AssertionError [ERR_ASSERTION]: No decision has been made. -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:140:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:133:5
+✖ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.629376ms)
+  AssertionError [ERR_ASSERTION]: 还未决定采用A。 -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:140:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,20 @@
+{
+  "test/core.test.ts": {
+    "sha256": "a132e526ebc87d72bf9e626fbb0bfc6ae719b9e34cdc362cf4ad973fa31c9e63",
+    "phaseBTesterModified": false,
+    "priorRecordedTerminalDigest": "a132e526ebc87d72bf9e626fbb0bfc6ae719b9e34cdc362cf4ad973fa31c9e63",
+    "digestComparison": true
+  },
+  "test/factory.test.ts": {
+    "sha256": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+    "phaseBTesterModified": false,
+    "priorRecordedTerminalDigest": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+    "digestComparison": true
+  },
+  "test/regressions.test.ts": {
+    "sha256": "6e35402c60685cf37221d71466050a509108974e68b2ac4f81ea9102cd77059a",
+    "phaseBTesterModified": false,
+    "priorRecordedTerminalDigest": null,
+    "digestComparison": "no persisted phase-A final digest available"
+  }
+}

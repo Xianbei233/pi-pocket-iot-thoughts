@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2024",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": ["ES2024"],
+        "strict": true,
+        "noEmit": true,
+        "allowImportingTsExtensions": true,
+        "erasableSyntaxOnly": true,
+        "verbatimModuleSyntax": true,
+        "skipLibCheck": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true,
+        "types": ["node"]
+    },
+    "include": ["iot-thoughts.ts", "test/**/*.ts", "scripts/**/*.ts"],
+    "exclude": ["node_modules", "dist", "evidence"]
+}

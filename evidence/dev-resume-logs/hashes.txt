@@ -1,0 +1,2 @@
+4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd  iot-thoughts.ts
+369686c7a76f5f8799f9af392795932026aca42a160869fadece40f95fcae6bb  dist/pi-pocket-iot-thoughts-0.1.0.tgz

@@ -1,0 +1,37 @@
+✔ link script refuses directory-symlink node_modules without modifying external target (42.429639ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (33.826056ms)
+✔ link script refuses regular-file node_modules without modifying external target (35.524744ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (55.010564ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (60.81643ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (68.231169ms)
+✔ offline pack refuses symlink payload manifest.json (427.068332ms)
+✔ offline pack rejects a tampered source digest (52.521757ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (713.032721ms)
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (19666.966181ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 9
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20691.554946
+
+✖ failing tests:
+
+test at test/pocket-integration.test.ts:124:1
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (19666.966181ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 2
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/pocket-integration.test.ts:229:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

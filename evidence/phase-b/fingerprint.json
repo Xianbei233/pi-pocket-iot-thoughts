@@ -1,0 +1,33 @@
+{
+  "branch": "pocket-adapter",
+  "head": "unborn/no commit",
+  "remotes": "",
+  "sha256": {
+    "iot-thoughts.ts": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+    "manifest.json": "4618d4156542f1fadb0e37f8bba9c8a7a851778ce35f0257058b4516dec097de",
+    "package.json": "f6c9acfc909a1ce98105ba06240a5a5134cee03f3b00d3257f8a2c4f77bbe063",
+    "docs/design.md": "b0e9fb2c032feb6ad807ac1e5128386071e45b2e4eb826b82f4a9ce743927300",
+    "docs/install.md": "30a442c4451eafdaeca6178e48e9df1e154140e6a91772762d26dd6091a4d7d8",
+    "README.md": "e812e5b3260443436b332d9b403db5762cea68720c9bd6ecdf480d9312cae59e",
+    "scripts/pack.mjs": "f71e10abb840bae01e4ab1001c3fff66a2863d69a28ca3360ef64c7fd36984af",
+    "scripts/link-pocket.mjs": "67de4b82c66eef820d884e28de7754c0481fcb2ca2bda4cac43b01daedb77469",
+    "test/core.test.ts": "a132e526ebc87d72bf9e626fbb0bfc6ae719b9e34cdc362cf4ad973fa31c9e63",
+    "test/factory.test.ts": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+    "test/packaging.test.ts": "7ef41eae94a2b0e49c8d6a81d608f8ea98ef121ac558b841ac949672af3b07a6",
+    "test/pocket-integration.test.ts": "b3c1b58a5dc96c2667f44ea1ae1b818bb7e2db256f434cb9cfc6971b0c72a215",
+    "test/regressions.test.ts": "6e35402c60685cf37221d71466050a509108974e68b2ac4f81ea9102cd77059a"
+  },
+  "packages": {
+    "dist/pi-pocket-iot-thoughts-0.1.0.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+    "evidence/phase-b/artifacts/owner-candidate.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+    "evidence/phase-b/artifacts/pi-pocket-iot-thoughts-0.1.0.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+    "evidence/phase-b/artifacts/verified-script-output.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689"
+  },
+  "pocket": {
+    "commit": "564058ef9768c0ee64a074257563576c257ede84",
+    "version": "0.18.0",
+    "node": "v26.10.0",
+    "pi-ai": "1.1.0",
+    "pi-durable": "1.1.0"
+  }
+}

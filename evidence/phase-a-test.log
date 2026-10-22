@@ -1,0 +1,90 @@
+
+> pi-pocket-iot-thoughts@0.1.0 test
+> node --test test/*.test.ts
+
+✔ config defaults are exact and frozen (2.583722ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.633666ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.620466ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (9.867437ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (7.685515ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (14.412103ms)
+✔ empty/short/disabled and not-shorter preserve exact original (10.832789ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (3.112283ms)
+✖ fenced repeated code and factual tool output remain intact (8.514814ms)
+✔ pre-abort and active abort reject, do not return apparent success (2.321257ms)
+✔ concurrent calls cannot leak or reuse another input (2.977838ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (2.841717ms)
+✔ tool calls host defang and warns alongside untrusted result (2.535043ms)
+✔ factory config is read once and malformed env fails closed without echoing content (1.710143ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (7.191315ms)
+✔ caller abort cancels tool and does not retain listeners or timers (2.336273ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (67.215672ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (61.406244ms)
+✔ link script refuses regular-file node_modules without modifying external target (70.637494ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (85.419549ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (82.020216ms)
+✔ offline pack refuses symlink payload without reading outside target (78.230608ms)
+✔ offline pack rejects a tampered source digest (76.670486ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (849.750626ms)
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (39773.166137ms)
+✔ direct options reject unknown permissions (2.875381ms)
+✔ direct options reject array (0.358637ms)
+✔ direct options reject null (0.254014ms)
+✔ direct options reject inherited (0.211969ms)
+✔ direct options reject symbol key (0.246122ms)
+✔ input over configured max rejects even enabled=true (1.252051ms)
+✔ input over configured max rejects even enabled=false (0.393907ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (12.823834ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (94.689142ms)
+✔ identical text with opposing labels does not lose its negative semantics (4.493961ms)
+✔ conservative inference 尚未决定采用A。 (6.938139ms)
+✔ conservative inference 不支持采用A。 (7.073353ms)
+✔ conservative inference 计划采用A。 (4.892687ms)
+✔ unverified/verified-looking prose must never set verified true (4.072257ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (2.741285ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 38
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 41255.012247
+
+✖ failing tests:
+
+test at test/core.test.ts:181:1
+✖ fenced repeated code and factual tool output remain intact (8.514814ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'compacted'
+  - 'kept'
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/core.test.ts:190:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'compacted',
+    expected: 'kept',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/pocket-integration.test.ts:103:1
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (39773.166137ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3 !== 2
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/pocket-integration.test.ts:208:20)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

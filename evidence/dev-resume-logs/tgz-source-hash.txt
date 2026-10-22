@@ -1,0 +1,1 @@
+4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd  /tmp/iot-tgz-check-LWGK/package/iot-thoughts.ts

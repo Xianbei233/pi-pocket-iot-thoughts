@@ -1,0 +1,78 @@
+✔ config defaults are exact and frozen (2.309876ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.545599ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.194154ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (8.883593ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (7.999327ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (11.81122ms)
+✔ empty/short/disabled and not-shorter preserve exact original (1.678926ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (4.546001ms)
+✔ fenced repeated code and factual tool output remain intact (1.096655ms)
+✔ pre-abort and active abort reject, do not return apparent success (2.791436ms)
+✔ concurrent calls cannot leak or reuse another input (3.368678ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (2.822935ms)
+✔ tool calls host defang and warns alongside untrusted result (2.358068ms)
+✔ factory config is read once and malformed env fails closed without echoing content (1.794794ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (7.22953ms)
+✔ caller abort cancels tool and does not retain listeners or timers (3.926015ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (73.69235ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (80.466093ms)
+✔ link script refuses regular-file node_modules without modifying external target (79.696157ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (79.289259ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (74.641918ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (64.982104ms)
+✔ offline pack refuses symlink payload manifest.json (57.943102ms)
+✔ offline pack rejects a tampered source digest (55.18079ms)
+✖ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (2.994745ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1512.772599ms)
+✔ direct options reject unknown permissions (2.265248ms)
+✔ direct options reject array (0.290053ms)
+✔ direct options reject null (0.147994ms)
+✔ direct options reject inherited (0.191366ms)
+✔ direct options reject symbol key (0.21637ms)
+✔ input over configured max rejects even enabled=true (0.719091ms)
+✔ input over configured max rejects even enabled=false (0.259252ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (13.217903ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (86.429602ms)
+✔ identical text with opposing labels does not lose its negative semantics (5.38906ms)
+✔ conservative inference 尚未决定采用A。 (5.277104ms)
+✔ conservative inference 不支持采用A。 (5.827248ms)
+✔ conservative inference 计划采用A。 (5.298056ms)
+✔ unverified/verified-looking prose must never set verified true (3.373427ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (1.855347ms)
+✔ negative and undecided prose is conservatively labelled: We do not support option A. (6.208653ms)
+✔ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (4.804764ms)
+✔ negative and undecided prose is conservatively labelled: No decision has been made. (4.460793ms)
+✔ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.341358ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 44
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2730.841873
+
+✖ failing tests:
+
+test at test/packaging.test.ts:146:1
+✖ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (2.994745ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'd90e88861bdc93725ce580458c4418d96589ac183b786b62e4518c2ef30fd8c8'
+  - '4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd'
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/packaging.test.ts:158:16)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'd90e88861bdc93725ce580458c4418d96589ac183b786b62e4518c2ef30fd8c8',
+    expected: '4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

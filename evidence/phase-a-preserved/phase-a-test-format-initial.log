@@ -1,0 +1,7 @@
+Checking formatting...
+[warn] test/core.test.ts
+[warn] test/factory.test.ts
+[warn] test/packaging.test.ts
+[warn] test/pocket-integration.test.ts
+[warn] test/regressions.test.ts
+[warn] Code style issues found in 5 files. Run Prettier with --write to fix.

@@ -1,0 +1,57 @@
+
+> pi-pocket-iot-thoughts@0.1.0 test
+> node --test test/*.test.ts
+
+✔ config defaults are exact and frozen (3.268313ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.603915ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.198205ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (12.078426ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (5.92153ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (16.708513ms)
+✔ empty/short/disabled and not-shorter preserve exact original (2.816926ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (5.666748ms)
+✔ fenced repeated code and factual tool output remain intact (2.240243ms)
+✔ pre-abort and active abort reject, do not return apparent success (8.098985ms)
+✔ concurrent calls cannot leak or reuse another input (2.889771ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (2.850101ms)
+✔ tool calls host defang and warns alongside untrusted result (1.925117ms)
+✔ factory config is read once and malformed env fails closed without echoing content (1.503972ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (9.86626ms)
+✔ caller abort cancels tool and does not retain listeners or timers (2.746385ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (59.401917ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (52.374303ms)
+✔ link script refuses regular-file node_modules without modifying external target (51.821157ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (74.27485ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (80.492719ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (77.152189ms)
+✔ offline pack refuses symlink payload manifest.json (469.552011ms)
+✔ offline pack rejects a tampered source digest (61.674427ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (823.975328ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1512.762862ms)
+✔ direct options reject unknown permissions (4.060109ms)
+✔ direct options reject array (0.412974ms)
+✔ direct options reject null (0.25136ms)
+✔ direct options reject inherited (0.212389ms)
+✔ direct options reject symbol key (0.545953ms)
+✔ input over configured max rejects even enabled=true (1.273494ms)
+✔ input over configured max rejects even enabled=false (0.450618ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (20.229723ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (89.192902ms)
+✔ identical text with opposing labels does not lose its negative semantics (3.917632ms)
+✔ conservative inference 尚未决定采用A。 (6.728202ms)
+✔ conservative inference 不支持采用A。 (6.282122ms)
+✔ conservative inference 计划采用A。 (4.999619ms)
+✔ unverified/verified-looking prose must never set verified true (3.761885ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (2.122699ms)
+✔ negative and undecided prose is conservatively labelled: We do not support option A. (7.336383ms)
+✔ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (7.230713ms)
+✔ negative and undecided prose is conservatively labelled: No decision has been made. (5.74483ms)
+✔ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.715148ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2836.291619

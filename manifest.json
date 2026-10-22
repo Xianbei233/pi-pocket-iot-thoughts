@@ -1,0 +1,45 @@
+{
+    "name": "iot-thoughts",
+    "version": "0.1.0",
+    "module": "iot-thoughts.ts",
+    "license": "MIT",
+    "pocketApi": 1,
+    "requires": {
+        "pocket": ">=0.14.0",
+        "node": ">=22.19"
+    },
+    "verifiedWith": {
+        "pocket": "0.18.0",
+        "node": "26.10.0",
+        "piDurable": "1.1.0",
+        "piAi": "1.1.0"
+    },
+    "capabilities": {
+        "tools": ["iot_thoughts_compact"],
+        "promptSections": ["iot_thoughts"],
+        "routes": [],
+        "browserModule": false,
+        "network": false,
+        "filesystem": false,
+        "modelCalls": false,
+        "mcp": false,
+        "hardware": false,
+        "persistentState": false
+    },
+    "upstream": {
+        "repo": "https://github.com/Roninton/IoT-items-of-thoughts",
+        "commit": "2bdf1ef78e9decdea7bbc3d5a2664160a2a83e8e",
+        "role": "behavior reference only; no source or prompts copied"
+    },
+    "hashes": {
+        "package.json": "f6c9acfc909a1ce98105ba06240a5a5134cee03f3b00d3257f8a2c4f77bbe063",
+        "iot-thoughts.ts": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+        "config.example.json": "17df268d1bdc15ad95cfa29c5acf571923a8e3840a1725547664eecc82dc87ac",
+        "README.md": "e812e5b3260443436b332d9b403db5762cea68720c9bd6ecdf480d9312cae59e",
+        "LICENSE": "c9dbdeec33110a2064ecd5332fffbf07d7badc044accb9df1ce3101d23a9bb6d",
+        "PROVENANCE.md": "302489c4f40e59f8dae24843a10ecf6974ac4fe79eeeb55247d7787bfc475081",
+        "docs/design.md": "b0e9fb2c032feb6ad807ac1e5128386071e45b2e4eb826b82f4a9ce743927300",
+        "docs/install.md": "30a442c4451eafdaeca6178e48e9df1e154140e6a91772762d26dd6091a4d7d8"
+    },
+    "hashesStatus": "candidate snapshot; regenerate after any edit to a shipped file"
+}

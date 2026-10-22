@@ -1,0 +1,9 @@
+{
+    "enabled": true,
+    "profile": "full",
+    "minChars": 400,
+    "maxInputChars": 24000,
+    "maxNodes": 8,
+    "maxOutputChars": 8000,
+    "timeoutMs": 1000
+}

@@ -1,0 +1,134 @@
+
+> pi-pocket-iot-thoughts@0.1.0 test
+> node --test test/*.test.ts
+
+✔ config defaults are exact and frozen (3.260209ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.724949ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.034006ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (7.217226ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (6.221494ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (11.664323ms)
+✔ empty/short/disabled and not-shorter preserve exact original (1.202952ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (2.568427ms)
+✖ fenced repeated code and factual tool output remain intact (11.042872ms)
+✔ pre-abort and active abort reject, do not return apparent success (3.740299ms)
+✔ concurrent calls cannot leak or reuse another input (2.914632ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (3.055782ms)
+✔ tool calls host defang and warns alongside untrusted result (1.660975ms)
+✔ factory config is read once and malformed env fails closed without echoing content (1.181651ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (9.422127ms)
+✔ caller abort cancels tool and does not retain listeners or timers (2.256304ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (68.540845ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (55.021598ms)
+✔ link script refuses regular-file node_modules without modifying external target (54.249289ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (61.153904ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (68.97994ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (61.262159ms)
+✔ offline pack refuses symlink payload manifest.json (430.742907ms)
+✔ offline pack rejects a tampered source digest (53.588029ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (716.839853ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1388.525755ms)
+✔ direct options reject unknown permissions (2.254837ms)
+✔ direct options reject array (0.411647ms)
+✔ direct options reject null (0.155887ms)
+✔ direct options reject inherited (0.151347ms)
+✔ direct options reject symbol key (0.231176ms)
+✔ input over configured max rejects even enabled=true (0.724258ms)
+✔ input over configured max rejects even enabled=false (0.288585ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (14.222413ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (84.158136ms)
+✔ identical text with opposing labels does not lose its negative semantics (4.671289ms)
+✔ conservative inference 尚未决定采用A。 (5.008065ms)
+✔ conservative inference 不支持采用A。 (6.890437ms)
+✔ conservative inference 计划采用A。 (6.095779ms)
+✔ unverified/verified-looking prose must never set verified true (3.054594ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (2.798415ms)
+✖ negative and undecided prose is conservatively labelled: We do not support option A. (6.985142ms)
+✖ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (5.47328ms)
+✖ negative and undecided prose is conservatively labelled: No decision has been made. (5.784006ms)
+✖ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.197196ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 40
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2538.687837
+
+✖ failing tests:
+
+test at test/core.test.ts:181:1
+✖ fenced repeated code and factual tool output remain intact (11.042872ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'compacted'
+  - 'kept'
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/core.test.ts:190:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'compacted',
+    expected: 'kept',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:138:5
+✖ negative and undecided prose is conservatively labelled: We do not support option A. (6.985142ms)
+  AssertionError [ERR_ASSERTION]: We do not support option A. -> support
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:148:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:138:5
+✖ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (5.47328ms)
+  AssertionError [ERR_ASSERTION]: We have not yet decided whether to choose A. -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:148:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:138:5
+✖ negative and undecided prose is conservatively labelled: No decision has been made. (5.784006ms)
+  AssertionError [ERR_ASSERTION]: No decision has been made. -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:148:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test/regressions.test.ts:138:5
+✖ negative and undecided prose is conservatively labelled: 还未决定采用A。 (5.197196ms)
+  AssertionError [ERR_ASSERTION]: 还未决定采用A。 -> decision
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/regressions.test.ts:148:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

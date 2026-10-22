@@ -1,0 +1,11 @@
+{
+  "tool": "bash",
+  "status": "aborted before shell exit receipt",
+  "logObserved": {
+    "tests": 9,
+    "passed": 8,
+    "failed": 1
+  },
+  "exitCode": "not obtained; do not infer from test log",
+  "retry": "phase A bounded baseline after native title-trigger harness correction"
+}

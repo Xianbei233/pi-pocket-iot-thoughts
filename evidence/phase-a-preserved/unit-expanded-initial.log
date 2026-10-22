@@ -1,0 +1,39 @@
+✔ config defaults are exact and frozen (1.497819ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.139533ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.028345ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (7.817629ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (4.786512ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (10.26613ms)
+✔ empty/short/disabled and not-shorter preserve exact original (1.910652ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (2.785694ms)
+✔ fenced repeated code and factual tool output remain intact (1.568848ms)
+✔ pre-abort and active abort reject, do not return apparent success (1.87168ms)
+✔ concurrent calls cannot leak or reuse another input (3.206629ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (1.817832ms)
+✔ tool calls host defang and warns alongside untrusted result (1.245482ms)
+✔ factory config is read once and malformed env fails closed without echoing content (0.733125ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (4.280231ms)
+✔ caller abort cancels tool and does not retain listeners or timers (2.346672ms)
+✔ direct options reject unknown permissions (1.911909ms)
+✔ direct options reject array (0.217975ms)
+✔ direct options reject null (0.121734ms)
+✔ direct options reject inherited (0.115308ms)
+✔ direct options reject symbol key (0.128159ms)
+✔ input over configured max rejects even enabled=true (0.539036ms)
+✔ input over configured max rejects even enabled=false (0.206032ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (7.498105ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (75.04621ms)
+✔ identical text with opposing labels does not lose its negative semantics (5.754304ms)
+✔ conservative inference 尚未决定采用A。 (5.197389ms)
+✔ conservative inference 不支持采用A。 (5.186145ms)
+✔ conservative inference 计划采用A。 (4.24126ms)
+✔ unverified/verified-looking prose must never set verified true (3.178134ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (0.919741ms)
+ℹ tests 31
+ℹ suites 0
+ℹ pass 31
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 428.134385

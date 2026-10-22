@@ -1,0 +1,28 @@
+{
+  "result": "pass",
+  "npmTest": {
+    "exit": 0,
+    "tests": 45,
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "check": 0,
+  "lint": 0,
+  "formatCheck": 0,
+  "actualIsolatedPackScript": 0,
+  "distAudit": 0,
+  "sourceSha256": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+  "distSha256": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+  "manifestSha256": "4618d4156542f1fadb0e37f8bba9c8a7a851778ce35f0257058b4516dec097de",
+  "bytes": 22497,
+  "files": 9,
+  "allManifestPayloadDigestsVerified": true,
+  "installedTarByteIdenticalToDist": true,
+  "originalPhaseAFiveFailuresResolved": true,
+  "originalAssertionsRelaxed": false,
+  "productionEnabled": false,
+  "committed": false,
+  "testFilesFrozen": true
+}

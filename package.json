@@ -1,0 +1,33 @@
+{
+    "name": "pi-pocket-iot-thoughts",
+    "version": "0.1.0",
+    "description": "A read-only Pi Pocket tool that arranges visible notes and trade-offs into labelled, source-located nodes. Deterministic, extractive, offline.",
+    "license": "MIT",
+    "type": "module",
+    "private": false,
+    "engines": {
+        "node": ">=22.19"
+    },
+    "peerDependencies": {
+        "@earendil-works/pi-ai": "1.1.0",
+        "@earendil-works/pi-durable": "1.1.0"
+    },
+    "files": [
+        "iot-thoughts.ts",
+        "manifest.json",
+        "config.example.json",
+        "README.md",
+        "LICENSE",
+        "PROVENANCE.md",
+        "docs/design.md",
+        "docs/install.md"
+    ],
+    "scripts": {
+        "link:pocket": "node scripts/link-pocket.mjs",
+        "check": "tsc -p tsconfig.json",
+        "lint": "eslint .",
+        "format:check": "prettier --check .",
+        "test": "node --test test/*.test.ts",
+        "pack:offline": "node scripts/pack.mjs"
+    }
+}

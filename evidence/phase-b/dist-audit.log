@@ -1,0 +1,4 @@
+  File "<stdin>", line 20
+    (p/'evidence/phase-b/dist-audit.json').write_text(json.dumps(r,indent=2)+'
+                                                                             ^
+SyntaxError: unterminated string literal (detected at line 20)

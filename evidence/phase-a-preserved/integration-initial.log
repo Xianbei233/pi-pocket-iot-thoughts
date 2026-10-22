@@ -1,0 +1,36 @@
+✔ link script refuses directory-symlink node_modules without modifying external target (47.693655ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (41.308683ms)
+✔ link script refuses regular-file node_modules without modifying external target (46.183125ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (49.149779ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (52.571519ms)
+✔ offline pack refuses symlink payload without reading outside target (54.813778ms)
+✔ offline pack rejects a tampered source digest (66.853041ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (711.41388ms)
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1014.005164ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 8
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2038.99457
+
+✖ failing tests:
+
+test at test/pocket-integration.test.ts:75:1
+✖ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1014.005164ms)
+  AssertionError [ERR_ASSERTION]: one tool turn: exactly two faux calls, no auxiliary compression requests
+  
+  3 !== 2
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/pocket-integration.test.ts:114:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 3,
+    expected: 2,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

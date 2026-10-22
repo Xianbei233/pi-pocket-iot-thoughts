@@ -1,0 +1,7 @@
+{
+  "note": "Copies pre-phase-B on-disk evidence. Root integration/pack helper outputs may have been refreshed by developer test runs; do not relabel them as original phase-A payload. Original phase-A source/package fingerprints remain in PHASE-A-REPORT.md.",
+  "copiedArtifacts": {
+    "artifacts/pi-pocket-iot-thoughts-0.1.0.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+    "artifacts/verified-script-output.tgz": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689"
+  }
+}

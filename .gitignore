@@ -1,0 +1,9 @@
+node_modules/
+dist/
+_pocket.d.ts
+*.tgz
+.DS_Store
+evidence/npm-cache/
+evidence/artifacts/
+evidence/**/npm-cache/
+evidence/**/artifacts/

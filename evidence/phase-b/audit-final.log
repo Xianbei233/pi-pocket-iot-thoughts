@@ -1,0 +1,55 @@
+{
+  "dist": {
+    "dist": "dist/pi-pocket-iot-thoughts-0.1.0.tgz",
+    "distSha256": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+    "bytes": 22497,
+    "files": [
+      "LICENSE",
+      "PROVENANCE.md",
+      "README.md",
+      "config.example.json",
+      "docs/design.md",
+      "docs/install.md",
+      "iot-thoughts.ts",
+      "manifest.json",
+      "package.json"
+    ],
+    "count": 9,
+    "allRegular": true,
+    "payloadEqualsCheckout": true,
+    "manifestDigestsAll8Verified": true,
+    "manifestSha256": "4618d4156542f1fadb0e37f8bba9c8a7a851778ce35f0257058b4516dec097de",
+    "sourceSha256": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+    "allPayloadSha256": {
+      "LICENSE": "c9dbdeec33110a2064ecd5332fffbf07d7badc044accb9df1ce3101d23a9bb6d",
+      "PROVENANCE.md": "302489c4f40e59f8dae24843a10ecf6974ac4fe79eeeb55247d7787bfc475081",
+      "README.md": "e812e5b3260443436b332d9b403db5762cea68720c9bd6ecdf480d9312cae59e",
+      "config.example.json": "17df268d1bdc15ad95cfa29c5acf571923a8e3840a1725547664eecc82dc87ac",
+      "docs/design.md": "b0e9fb2c032feb6ad807ac1e5128386071e45b2e4eb826b82f4a9ce743927300",
+      "docs/install.md": "30a442c4451eafdaeca6178e48e9df1e154140e6a91772762d26dd6091a4d7d8",
+      "iot-thoughts.ts": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+      "manifest.json": "4618d4156542f1fadb0e37f8bba9c8a7a851778ce35f0257058b4516dec097de",
+      "package.json": "f6c9acfc909a1ce98105ba06240a5a5134cee03f3b00d3257f8a2c4f77bbe063"
+    }
+  },
+  "originalRegressions": {
+    "test/core.test.ts": {
+      "sha256": "a132e526ebc87d72bf9e626fbb0bfc6ae719b9e34cdc362cf4ad973fa31c9e63",
+      "phaseBTesterModified": false,
+      "priorRecordedTerminalDigest": "a132e526ebc87d72bf9e626fbb0bfc6ae719b9e34cdc362cf4ad973fa31c9e63",
+      "digestComparison": true
+    },
+    "test/factory.test.ts": {
+      "sha256": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+      "phaseBTesterModified": false,
+      "priorRecordedTerminalDigest": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+      "digestComparison": true
+    },
+    "test/regressions.test.ts": {
+      "sha256": "6e35402c60685cf37221d71466050a509108974e68b2ac4f81ea9102cd77059a",
+      "phaseBTesterModified": false,
+      "priorRecordedTerminalDigest": null,
+      "digestComparison": "no persisted phase-A final digest available"
+    }
+  }
+}

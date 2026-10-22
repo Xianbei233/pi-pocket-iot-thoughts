@@ -1,0 +1,5 @@
+test/core.test.ts 101ms
+test/factory.test.ts 37ms
+test/packaging.test.ts 23ms
+test/pocket-integration.test.ts 36ms
+test/regressions.test.ts 17ms
