@@ -1,0 +1,12 @@
+[
+  {
+    "file": "iot-thoughts.ts",
+    "title": "iot-thoughts",
+    "source": "drop-in",
+    "summary": "IoT (Items of Thoughts) notes for Pi Pocket: a read-only tool that turns visible notes and explicit trade-offs into labelled nodes with source offsets.",
+    "enabled": false,
+    "required": false,
+    "extensions": [],
+    "path": "/tmp/pi-pocket-test-fblgTS/iot-exact-repro-data/extensions/iot-thoughts.ts"
+  }
+]

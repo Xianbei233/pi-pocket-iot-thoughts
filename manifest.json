@@ -1,30 +1,30 @@
 {
     "name": "iot-thoughts",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "module": "iot-thoughts.ts",
     "license": "MIT",
-    "pocketApi": 1,
+    "pocketApi": 2,
     "requires": {
-        "pocket": ">=0.14.0",
+        "pocket": ">=0.20.0",
         "node": ">=22.19"
     },
     "verifiedWith": {
-        "pocket": "0.18.0",
+        "pocket": "0.20.0",
         "node": "26.10.0",
-        "piDurable": "1.1.0",
-        "piAi": "1.1.0"
+        "piDurable": "1.3.0",
+        "piAi": "1.3.0"
     },
     "capabilities": {
         "tools": ["iot_thoughts_compact"],
         "promptSections": ["iot_thoughts"],
-        "routes": [],
-        "browserModule": false,
+        "routes": ["GET config", "POST config", "POST reset"],
+        "browserModule": true,
         "network": false,
-        "filesystem": false,
+        "filesystem": "own config only: <dataDir>/x.iot-thoughts/config.json",
         "modelCalls": false,
         "mcp": false,
         "hardware": false,
-        "persistentState": false
+        "persistentState": true
     },
     "upstream": {
         "repo": "https://github.com/Roninton/IoT-items-of-thoughts",
@@ -32,14 +32,16 @@
         "role": "behavior reference only; no source or prompts copied"
     },
     "hashes": {
-        "package.json": "f6c9acfc909a1ce98105ba06240a5a5134cee03f3b00d3257f8a2c4f77bbe063",
-        "iot-thoughts.ts": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+        "package.json": "a489e0a0d28a33ae7d8916c6123463d2669342861fe9422a425cf9d3f2c106f3",
+        "iot-thoughts.ts": "14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287",
+        "iot-thoughts/index.js": "4770e0dc86635ff9b31dbef796a1648f5acf5e33da9aac1873ecf6e754f66bf7",
+        "iot-thoughts/style.css": "0094a93f2beda4f95e4510791a4677183333b432881faecbee1510ddd045f7ff",
         "config.example.json": "17df268d1bdc15ad95cfa29c5acf571923a8e3840a1725547664eecc82dc87ac",
-        "README.md": "e812e5b3260443436b332d9b403db5762cea68720c9bd6ecdf480d9312cae59e",
+        "README.md": "a9d602483220efec22d3562db4da17aebe2558111bb4dc00620ed05b5eff3858",
         "LICENSE": "c9dbdeec33110a2064ecd5332fffbf07d7badc044accb9df1ce3101d23a9bb6d",
         "PROVENANCE.md": "302489c4f40e59f8dae24843a10ecf6974ac4fe79eeeb55247d7787bfc475081",
-        "docs/design.md": "b0e9fb2c032feb6ad807ac1e5128386071e45b2e4eb826b82f4a9ce743927300",
-        "docs/install.md": "30a442c4451eafdaeca6178e48e9df1e154140e6a91772762d26dd6091a4d7d8"
+        "docs/design.md": "27213973ea9a9772d16bd7f185bd759fa2b4cec180fa8ab73bfe1de3f3e75cd3",
+        "docs/install.md": "3c9897740cf3133eaaf68c1ef6db3e0c484e2de4668df873508a755744762636"
     },
     "hashesStatus": "candidate snapshot; regenerate after any edit to a shipped file"
 }

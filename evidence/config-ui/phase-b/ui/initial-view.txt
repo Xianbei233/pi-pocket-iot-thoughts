@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "stored": {
+    "enabled": true,
+    "profile": "full",
+    "minChars": 400,
+    "maxInputChars": 24000,
+    "maxNodes": 8,
+    "maxOutputChars": 8000,
+    "timeoutMs": 1000
+  },
+  "effective": {
+    "enabled": true,
+    "profile": "full",
+    "minChars": 400,
+    "maxInputChars": 24000,
+    "maxNodes": 8,
+    "maxOutputChars": 8000,
+    "timeoutMs": 1000
+  },
+  "defaults": {
+    "enabled": true,
+    "profile": "full",
+    "minChars": 400,
+    "maxInputChars": 24000,
+    "maxNodes": 8,
+    "maxOutputChars": 8000,
+    "timeoutMs": 1000
+  },
+  "environmentOverrides": {},
+  "sources": {
+    "enabled": "default",
+    "profile": "default",
+    "minChars": "default",
+    "maxInputChars": "default",
+    "maxNodes": "default",
+    "maxOutputChars": "default",
+    "timeoutMs": "default"
+  },
+  "revision": "4698def6de5c6b3d51db2e8044d5ae531e7df2ea99d4703b117de261123005d3",
+  "runtime": {
+    "moduleLoaded": true,
+    "algorithmEnabled": true,
+    "hotApply": true
+  },
+  "limits": {
+    "minChars": {
+      "min": 0,
+      "max": 64000,
+      "unit": "UTF-16 code units"
+    },
+    "maxInputChars": {
+      "min": 100,
+      "max": 64000,
+      "unit": "UTF-16 code units"
+    },
+    "maxNodes": {
+      "min": 1,
+      "max": 16,
+      "unit": "nodes"
+    },
+    "maxOutputChars": {
+      "min": 100,
+      "max": 64000,
+      "unit": "UTF-16 code units",
+      "mustNotExceed": "maxInputChars"
+    },
+    "timeoutMs": {
+      "min": 10,
+      "max": 5000,
+      "unit": "ms"
+    },
+    "profiles": [
+      "compact",
+      "balanced",
+      "full"
+    ]
+  }
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · desktop 1280×800

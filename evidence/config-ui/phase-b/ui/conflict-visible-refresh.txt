@@ -1,0 +1,86 @@
+{
+  "alert": "配置已在其他标签页更新，页面已刷新，请重新保存 / Changed in another tab; reloaded, save again",
+  "status": "模块已加载 / module loaded算法执行 / algorithm on热应用 / hot apply",
+  "view": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "sources": {
+      "enabled": "saved",
+      "profile": "saved",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "saved",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "1aa46e28c85523e7e021e3d5875ea7f4c53ccdd159bd800cca14aa8a8589a5f5",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": true,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  },
+  "formMin": "400",
+  "formNodes": "7"
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · desktop 1280×800

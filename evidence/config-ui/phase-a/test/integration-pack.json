@@ -1,0 +1,71 @@
+[
+  {
+    "id": "pi-pocket-iot-thoughts@0.2.0",
+    "name": "pi-pocket-iot-thoughts",
+    "version": "0.2.0",
+    "size": 33337,
+    "unpackedSize": 105745,
+    "shasum": "2dd74270bce8e86b1c83e16a502f105616c01ae0",
+    "integrity": "sha512-k0uFpcBKw8yHm4DTooRwzRNqI2BDzebQI6UOEYhHD8Qgxluo4mFxJXaf9Ka1V1h6cfR3WK6+8FFJsHcm9m6myw==",
+    "filename": "pi-pocket-iot-thoughts-0.2.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1092,
+        "mode": 384
+      },
+      {
+        "path": "PROVENANCE.md",
+        "size": 2998,
+        "mode": 384
+      },
+      {
+        "path": "README.md",
+        "size": 15368,
+        "mode": 384
+      },
+      {
+        "path": "config.example.json",
+        "size": 166,
+        "mode": 384
+      },
+      {
+        "path": "docs/design.md",
+        "size": 8779,
+        "mode": 384
+      },
+      {
+        "path": "docs/install.md",
+        "size": 5344,
+        "mode": 384
+      },
+      {
+        "path": "iot-thoughts.ts",
+        "size": 47547,
+        "mode": 384
+      },
+      {
+        "path": "iot-thoughts/index.js",
+        "size": 18999,
+        "mode": 384
+      },
+      {
+        "path": "iot-thoughts/style.css",
+        "size": 2378,
+        "mode": 384
+      },
+      {
+        "path": "manifest.json",
+        "size": 2057,
+        "mode": 384
+      },
+      {
+        "path": "package.json",
+        "size": 1017,
+        "mode": 384
+      }
+    ],
+    "entryCount": 11,
+    "bundled": []
+  }
+]

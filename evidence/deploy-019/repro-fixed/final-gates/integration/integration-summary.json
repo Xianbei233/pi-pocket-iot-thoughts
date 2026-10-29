@@ -1,0 +1,20 @@
+{
+  "helper": "/home/xianbei233/Work/pi-pocket-production/test/helpers.ts",
+  "realLoader": true,
+  "provider": "faux/faux-1",
+  "paidRequests": 0,
+  "requestCount": 23,
+  "initialOff": true,
+  "enable": true,
+  "nativeDefinitionsUnchanged": true,
+  "nativeRead": true,
+  "concurrentIsolation": true,
+  "over50K": [
+    "cjk",
+    "escaped"
+  ],
+  "reload": true,
+  "restartEnabled": true,
+  "disable": true,
+  "removeRestart": true
+}

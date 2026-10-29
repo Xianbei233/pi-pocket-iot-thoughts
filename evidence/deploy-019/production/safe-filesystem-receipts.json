@@ -1,0 +1,89 @@
+{
+  "deployment": {
+    "createdAt": "2026-10-23T07:44:26.929Z",
+    "pocket": {
+      "version": "0.19.0",
+      "head": "eae8ccf6c615ea2188f9b88e9252455917b081d4",
+      "root": "/home/xianbei233/Work/pi-pocket-production"
+    },
+    "candidate": {
+      "path": "/home/xianbei233/Work/pi-pocket-iot-thoughts/dist/deploy-019/pi-pocket-iot-thoughts-0.1.0.tgz",
+      "sha256": "f9e2351acca07ff5f43ff49f3502ef5ca03b34d4f2a4f7ef1a24994b581c6c8b",
+      "size": 22492
+    },
+    "hashes": {
+      "source": "b4564f4ee0a7db8a753459b97cc277a3f85ac158ecfbc55c8171cb89e9f1fdaf",
+      "manifest": "6d56a7dc9885fcea7fe6c7d489af51eb3dc0995c349a044a26796223a2254dda"
+    },
+    "installed": {
+      "path": "/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts",
+      "mode": "600",
+      "size": 29267,
+      "nlink": 1,
+      "sha256": "b4564f4ee0a7db8a753459b97cc277a3f85ac158ecfbc55c8171cb89e9f1fdaf",
+      "inode": 5498864
+    },
+    "copyExit": 0,
+    "otherFilesUnchanged": true,
+    "configWritten": false,
+    "serverRestarted": false
+  },
+  "rollback": {
+    "createdAt": "2026-10-23T07:49:04.703Z",
+    "officialDisable": {
+      "endpoint": "POST /api/extensions/iot-thoughts.ts enabled:false",
+      "http": 200,
+      "at": "2026-10-23T07:47:50.557Z"
+    },
+    "removed": {
+      "path": "/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts",
+      "inode": 5498864,
+      "sha256": "b4564f4ee0a7db8a753459b97cc277a3f85ac158ecfbc55c8171cb89e9f1fdaf",
+      "unlinkExit": 0,
+      "targetAbsent": true
+    },
+    "otherExtensions": {
+      "other_files_unchanged": true,
+      "added": [],
+      "removed": []
+    },
+    "config": {
+      "matchesBackup": false,
+      "overwritten": false,
+      "note": "official disable may keep a disabled marker; not edited"
+    },
+    "restart": false,
+    "sourceChanges": false,
+    "push": false
+  },
+  "plannerObserved": {
+    "at": "2026-10-23T07:50:23.125Z",
+    "http": 200,
+    "moduleCount": 27,
+    "enabledCount": 25,
+    "errorCount": 0,
+    "iotAbsent": true,
+    "changedExistingModules": [],
+    "independentlyObserved": false
+  },
+  "browserHandoff": {
+    "url": "about:blank",
+    "viewport": "1280x800",
+    "safeGlobalsPresent": false,
+    "consoleEmpty": true,
+    "authenticatedRollbackUiVerified": false
+  },
+  "productionAcceptance": {
+    "toolLevelSuccess": "reported by planner",
+    "compound8CategoryPredicate": "FAILED",
+    "rawNodeOutput": "not captured; unavailable from failed codemode store",
+    "cause": "not established; fixture selection or predicate failure remains possible",
+    "exactMissingTags": "not obtained",
+    "utf16Grounding": "not obtained",
+    "noRerun": true
+  },
+  "preflight": {
+    "status": "PASS",
+    "report": "evidence/deploy-019/adapted-preflight/REPORT.md"
+  }
+}

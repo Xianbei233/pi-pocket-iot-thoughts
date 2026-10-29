@@ -1,7 +1,7 @@
 {
     "name": "pi-pocket-iot-thoughts",
-    "version": "0.1.0",
-    "description": "A read-only Pi Pocket tool that arranges visible notes and trade-offs into labelled, source-located nodes. Deterministic, extractive, offline.",
+    "version": "0.2.0",
+    "description": "A Pi Pocket tool for visible-note nodes, with an owner-only settings page and its own hot-applied, persisted limits. Extraction is deterministic and offline.",
     "license": "MIT",
     "type": "module",
     "private": false,
@@ -9,11 +9,12 @@
         "node": ">=22.19"
     },
     "peerDependencies": {
-        "@earendil-works/pi-ai": "1.1.0",
-        "@earendil-works/pi-durable": "1.1.0"
+        "@earendil-works/pi-ai": "1.3.0",
+        "@earendil-works/pi-durable": "1.3.0"
     },
     "files": [
         "iot-thoughts.ts",
+        "iot-thoughts/",
         "manifest.json",
         "config.example.json",
         "README.md",

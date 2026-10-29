@@ -13,9 +13,13 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const packageJson = JSON.parse(readFileSync(join(root, "package.json"), "utf8"));
+const TARBALL = `pi-pocket-iot-thoughts-${String(packageJson.version)}.tgz`;
 const expectedFiles = [
     "package.json",
     "iot-thoughts.ts",
+    "iot-thoughts/index.js",
+    "iot-thoughts/style.css",
     "manifest.json",
     "config.example.json",
     "README.md",
@@ -48,7 +52,7 @@ function sha256(bytes) {
     return createHash("sha256").update(bytes).digest("hex");
 }
 
-for (const directory of ["docs", "scripts"]) {
+for (const directory of ["docs", "scripts", "iot-thoughts"]) {
     for (const path of filesUnder(directory)) {
         if (!expected.has(path) && !knownUnshipped.has(path)) {
             refuse(`unexpected file on disk: ${path}`);
@@ -100,7 +104,7 @@ if (missing.length > 0) {
 
 const destination = join(root, "dist");
 mkdirSync(destination, { recursive: true });
-const tarball = join(destination, "pi-pocket-iot-thoughts-0.1.0.tgz");
+const tarball = join(destination, TARBALL);
 if (existsSync(tarball)) {
     refuse(`refusing to overwrite ${tarball}`);
 }

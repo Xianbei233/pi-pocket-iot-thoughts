@@ -1,0 +1,10 @@
+{
+  "candidateSha256": "db5d2685cb77b070add5351f721ed02c56bcfa7c476ad5b34d7021f965e3a6db",
+  "bytes": 33337,
+  "exact11RegularFiles": true,
+  "all10ManifestDigestsValid": true,
+  "clientHashesValid": true,
+  "allPayloadEqualsWorkingFiles": true,
+  "coreRegressionBytesPreserved": true,
+  "configNotPackaged": true
+}

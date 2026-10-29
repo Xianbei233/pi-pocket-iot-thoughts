@@ -1,0 +1,38 @@
+{
+  "phase": "disabled",
+  "authorizedCalls": 1,
+  "callCount": 1,
+  "startedAt": "2026-10-23T14:33:28.893Z",
+  "candidateSha256": "a4b1fe83dc95e6572b8aa40e94f8dc7cea4c96ced5dec66f4f60435862accfb3",
+  "sourceSha256": "14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287",
+  "plannerSuppliedView": {
+    "storedEnabled": false,
+    "effectiveEnabled": false,
+    "otherFields": "original defaults",
+    "moduleStillEnabled": true,
+    "ui": "desktop1280x800 visible home entry, real Switch click, Save, Saved and applied, algorithm off"
+  },
+  "toolSucceeded": true,
+  "rawDurable": true,
+  "pass": true,
+  "errors": [],
+  "executedAt": "2026-10-23T14:33:28.904Z",
+  "checks": {
+    "statusKept": true,
+    "reasonDisabled": true,
+    "exactFullSource": true,
+    "charsIn684": true,
+    "charsOut684": true,
+    "textUtf16Length684": true,
+    "nodesEmpty": true,
+    "verifiedFalse": true,
+    "profileFull": true
+  },
+  "hashes": {
+    "requestUtf8Sha256": "eaaf9735e58cd8c007f42da892b2ba391795e1b752def522d5fb8d68695b6c2e",
+    "returnedTextUtf8Sha256": "eaaf9735e58cd8c007f42da892b2ba391795e1b752def522d5fb8d68695b6c2e",
+    "rawReturnSha256": "de01d78b7254020888c7d73bda5ca29c0149c75d4b6ae19568e869150c683483",
+    "rawReturnBytes": 2425
+  },
+  "finishedAt": "2026-10-23T14:33:28.989Z"
+}

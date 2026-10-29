@@ -1,0 +1,11 @@
+
+> pi-pocket-iot-thoughts@0.2.0 check
+> tsc -p tsconfig.json
+
+test/factory.test.ts(72,14): error TS2339: Property 'tool' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(80,23): error TS2339: Property 'defangs' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(94,42): error TS2339: Property 'tool' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(117,33): error TS2339: Property 'tool' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(118,10): error TS2339: Property 'dispose' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(120,44): error TS2339: Property 'tool' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.
+test/factory.test.ts(128,33): error TS2339: Property 'tool' does not exist on type 'Promise<{ extension: Extension<ToolRegistration>; tool: ToolRegistration; defangs: () => number; dispose: () => void; }>'.

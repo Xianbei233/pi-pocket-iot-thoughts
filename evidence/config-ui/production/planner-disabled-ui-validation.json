@@ -1,0 +1,53 @@
+{
+  "attribution": "Planner-supplied live production browser/API receipts; not independent tester UI",
+  "desktopPageReloadPersistence": {
+    "actualBrowserReload": true,
+    "serverRestart": false,
+    "normalVisibleEntryClicked": true,
+    "algorithmEnabled": false,
+    "switchAriaChecked": false,
+    "storedAndEffective": {
+      "enabled": false,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "sources": "saved"
+  },
+  "invalidClient": {
+    "maxNodes": 99,
+    "actualSaveClicked": true,
+    "visibleBilingualIntegerRangeError": "1..16",
+    "writeOccurred": false
+  },
+  "invalidServer": {
+    "authenticatedOwnRoutePost": true,
+    "maxNodes": 99,
+    "http": 400,
+    "error": "invalid-settings",
+    "storedEffectiveRevisionUnchanged": true,
+    "revisionPrefix": "5992e28455ff",
+    "configHashUnchanged": true,
+    "fileMode": "0600",
+    "lockAbsent": true
+  },
+  "resetCancel": {
+    "confirmationOpened": true,
+    "cancelClicked": true,
+    "confirmationClosed": true,
+    "storedEnabledStillFalse": true
+  },
+  "mobileNavigation": {
+    "viewport": "390x844",
+    "normalHomeVisibleEntryClicked": true,
+    "privateActivation": false,
+    "namedControlsRendered": 7,
+    "savedSettingsUnchanged": true
+  },
+  "moduleToggled": false,
+  "testerPerformedNewCall": false,
+  "nextPhase": "await explicit compact handoff"
+}

@@ -1,0 +1,127 @@
+{
+  "method": "Supplementary source-code derivation. This is not another tool invocation. Each supplied line is one source sentence for this exact fixture.",
+  "sourceUnits": 30,
+  "uniqueCandidates": 9,
+  "criticalCount": 6,
+  "criticalCandidates": [
+    {
+      "tag": "oppose",
+      "sourceTag": "反对",
+      "text": "不向外部服务发送这批合成笔记内容。",
+      "start": 28,
+      "end": 45,
+      "negationMatch": "不",
+      "critical": true
+    },
+    {
+      "tag": "open",
+      "sourceTag": "待定",
+      "text": "是否增加更多展示选项仍然等待确认。",
+      "start": 73,
+      "end": 90,
+      "negationMatch": null,
+      "critical": true
+    },
+    {
+      "tag": "decision",
+      "sourceTag": "决定",
+      "text": "本次保留原有模型设置和扩展权限。",
+      "start": 117,
+      "end": 133,
+      "negationMatch": null,
+      "critical": true
+    },
+    {
+      "tag": "risk",
+      "sourceTag": "风险",
+      "text": "标签仅靠词法可能错误归类普通语句。",
+      "start": 138,
+      "end": 155,
+      "negationMatch": null,
+      "critical": true
+    },
+    {
+      "tag": "neutral",
+      "sourceTag": "中性",
+      "text": "这些文字只用于本次无害上线验收。",
+      "start": 160,
+      "end": 176,
+      "negationMatch": "无",
+      "critical": true
+    },
+    {
+      "tag": "neutral",
+      "sourceTag": null,
+      "text": "普通背景说明仅用于构造可重复的无害验收文本。",
+      "start": 178,
+      "end": 200,
+      "negationMatch": "无",
+      "critical": true
+    }
+  ],
+  "noncriticalRankOrder": [
+    {
+      "tag": "tradeoff",
+      "sourceTag": "权衡",
+      "text": "更短展示与保留全部措辞之间需要取舍。",
+      "start": 50,
+      "end": 68,
+      "negationMatch": null,
+      "critical": false
+    },
+    {
+      "tag": "plan",
+      "sourceTag": "计划",
+      "text": "下一步由人工检查每个原文定位范围。",
+      "start": 95,
+      "end": 112,
+      "negationMatch": null,
+      "critical": false
+    },
+    {
+      "tag": "support",
+      "sourceTag": "支持",
+      "text": "😀 本地笔记整理便于人工核对原始句子。",
+      "start": 3,
+      "end": 23,
+      "negationMatch": null,
+      "critical": false
+    }
+  ],
+  "maxNodes": 8,
+  "remainingSlots": 2,
+  "chosenNoncritical": [
+    {
+      "tag": "tradeoff",
+      "sourceTag": "权衡",
+      "text": "更短展示与保留全部措辞之间需要取舍。",
+      "start": 50,
+      "end": 68,
+      "negationMatch": null,
+      "critical": false
+    },
+    {
+      "tag": "plan",
+      "sourceTag": "计划",
+      "text": "下一步由人工检查每个原文定位范围。",
+      "start": 95,
+      "end": 112,
+      "negationMatch": null,
+      "critical": false
+    }
+  ],
+  "excludedNoncritical": [
+    {
+      "tag": "support",
+      "sourceTag": "支持",
+      "text": "😀 本地笔记整理便于人工核对原始句子。",
+      "start": 3,
+      "end": 23,
+      "negationMatch": null,
+      "critical": false
+    }
+  ],
+  "budgetOutcome": "critical count 6 does not exceed 8; no node-budget-insufficient fallback",
+  "cause": "NEGATION matches 无 inside 无害 in the explicit neutral sentence and deduplicated unlabelled background. Those 2 neutral candidates are mandatory. The remaining 2 slots go to rank-1 tradeoff and plan. Rank-2 support with the emoji is excluded.",
+  "contractFinding": "Current documented critical-first/rank selection allows this compacted 8-node, 7-tag output. No explicit all-tag guarantee exists. The result does not meet the Owner's stricter 8-category fixture requirement."
+}

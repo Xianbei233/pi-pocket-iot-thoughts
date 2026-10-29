@@ -1,0 +1,33 @@
+{
+  "scope": "independent isolated fixed-candidate browser",
+  "candidateSha256": "0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4",
+  "desktop": {
+    "viewport": "1280x800",
+    "normalHomeVisibleEntryClick": true,
+    "renderedNamedSettings": 7,
+    "horizontalOverflow": false
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "normalHomeVisibleEntryClick": true,
+    "renderedNamedSettings": 7,
+    "horizontalOverflow": false
+  },
+  "workflow": {
+    "disabledSaveAndTool": true,
+    "compactSaveAndTool": true,
+    "pagePersistence": true,
+    "modulePersistence": true,
+    "invalidClientAndServer": true,
+    "resetCancelConfirm": true,
+    "envLocksAndStoredEffective": true,
+    "englishHelpValidation": true,
+    "conflictVisible": true,
+    "restoredOriginalEffective": true
+  },
+  "screenshots": {
+    "observedInTool": true,
+    "archivedPng": false
+  },
+  "productionTouched": false
+}

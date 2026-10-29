@@ -1,0 +1,75 @@
+[
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "toolCall",
+        "id": "tool:1792764216039:pbkh88wng8k",
+        "name": "iot_thoughts_compact",
+        "arguments": {
+          "text": "支持：😀 本地笔记整理便于人工核对原始句子。\r\n反对：不向外部服务发送这批合成笔记内容。\r\n权衡：更短展示与保留全部措辞之间需要取舍。\r\n待定：是否增加更多展示选项仍然等待确认。\r\n计划：下一步由人工检查每个原文定位范围。\r\n决定：本次保留原有模型设置和扩展权限。\r\n风险：标签仅靠词法可能错误归类普通语句。\r\n中性：这些文字只用于本次无害上线验收。\r\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n普通背景说明仅用于构造可重复的无害验收文本。\n",
+          "profile": "full"
+        }
+      }
+    ],
+    "api": "faux:1792764215424:pkvx1xlem4",
+    "provider": "faux",
+    "model": "faux-1",
+    "usage": {
+      "input": 6835,
+      "output": 193,
+      "cacheRead": 0,
+      "cacheWrite": 6835,
+      "totalTokens": 13863,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "total": 0
+      }
+    },
+    "stopReason": "toolUse",
+    "timestamp": 1792764216039,
+    "durationMs": 1,
+    "pocketTiming": {
+      "startedAt": 1792764216039,
+      "endedAt": 1792764216040,
+      "firstTokenAt": 1792764216040
+    }
+  },
+  {
+    "role": "assistant",
+    "content": [
+      {
+        "type": "text",
+        "text": "Synthetic result received."
+      }
+    ],
+    "api": "faux:1792764215424:pkvx1xlem4",
+    "provider": "faux",
+    "model": "faux-1",
+    "usage": {
+      "input": 634,
+      "output": 7,
+      "cacheRead": 6835,
+      "cacheWrite": 634,
+      "totalTokens": 8110,
+      "cost": {
+        "input": 0,
+        "output": 0,
+        "cacheRead": 0,
+        "cacheWrite": 0,
+        "total": 0
+      }
+    },
+    "stopReason": "stop",
+    "timestamp": 1792764216069,
+    "durationMs": 1,
+    "pocketTiming": {
+      "startedAt": 1792764216069,
+      "endedAt": 1792764216070,
+      "firstTokenAt": 1792764216070
+    }
+  }
+]

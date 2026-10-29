@@ -1,0 +1,10 @@
+{
+  "pid": 18196,
+  "root": "/tmp/pi-pocket-test-HyTnTa",
+  "data": "/tmp/pi-pocket-test-HyTnTa/ui-data",
+  "base": "http://127.0.0.2:44935",
+  "ownerLogin": "http://127.0.0.2:44935/login?token=7xiuP4sG5caJNGLHzWZqbRCBAbJBFHVi",
+  "guestLogin": "http://127.0.0.2:44935/login?token=eZik0q66assS1kZkmpT6V346IY6VPsMo",
+  "candidate": "/home/xianbei233/Work/pi-pocket-iot-thoughts/dist/config-ui-0.2.0-fixed/pi-pocket-iot-thoughts-0.2.0.tgz",
+  "expiresAfterSeconds": 1800
+}

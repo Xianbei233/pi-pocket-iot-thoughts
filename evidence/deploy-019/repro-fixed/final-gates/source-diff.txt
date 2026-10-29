@@ -1,0 +1,35 @@
+diff --git i/iot-thoughts.ts w/iot-thoughts.ts
+index 91fc9c7..86ba942 100644
+--- i/iot-thoughts.ts
++++ w/iot-thoughts.ts
+@@ -71,8 +71,12 @@ const HARD_MAX_OUTPUT_CHARS = 64000;
+  */
+ const TOOL_MAX_BYTES = 1024 * 1024;
+ const TOOL_MAX_LINES = 4000;
++/**
++ * A negation marker. The bare marker `无` does not count inside `无害`; every other `无` and every other negation in the
++ * same sentence still counts. This is a narrow lexical exception, not a semantic classifier.
++ */
+ const NEGATION =
+-    /(?:不|没|无|未|勿|别|禁|避免|不能|不应|不可|拒绝|反对)|\b(?:not|no|never|without|avoid|cannot|can't|don't|doesn't|didn't|reject|oppose)\b/i;
++    /(?:不|没|无(?!害)|未|勿|别|禁|避免|不能|不应|不可|拒绝|反对)|\b(?:not|no|never|without|avoid|cannot|can't|don't|doesn't|didn't|reject|oppose)\b/i;
+ const FENCE = /^[ \t]*(?:```|~~~)/m;
+ /**
+  * Explicit tool/fact output: a line that starts with a tool-output label. Such text is kept whole; the module does not
+@@ -764,7 +768,7 @@ export default function createIotThoughts(host: Host, web: Web) {
+                     // Unreachable at the hard limits; refuse instead of letting the harness truncate a JSON document.
+                     throw new Error("iot-thoughts: result too large to return safely");
+                 }
+-                return { content: [{ type: "text" as const, text: wrapped }] };
++                return { output: [{ type: "text" as const, text: wrapped }] };
+             } catch (error) {
+                 const name = errorName(error);
+                 if (name === "AbortError") {
+@@ -793,5 +797,5 @@ export default function createIotThoughts(host: Host, web: Web) {
+     });
+ }
+ 
+-/** The extension API this module needs. Pi Pocket 0.14.0 and later have this level. */
+-export const pocketApi = 1;
++/** The extension API this module needs; Pi Pocket 0.19.0 and later have it. This module returns `output`. */
++export const pocketApi = 2;

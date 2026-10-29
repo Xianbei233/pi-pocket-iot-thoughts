@@ -1,0 +1,87 @@
+{
+  "checks": {
+    "statusCompacted": true,
+    "nodeCount8": true,
+    "all8Tags": true,
+    "allGrounded": true,
+    "emojiNode": true,
+    "falseVerified": true,
+    "shorter": true
+  },
+  "counts": {
+    "support": 1,
+    "oppose": 1,
+    "tradeoff": 1,
+    "open": 1,
+    "plan": 1,
+    "decision": 1,
+    "risk": 1,
+    "neutral": 1
+  },
+  "ranges": [
+    {
+      "tag": "support",
+      "text": "😀 本地笔记整理便于人工核对原始句子。",
+      "start": 3,
+      "end": 23,
+      "sourceTag": "支持",
+      "grounded": true
+    },
+    {
+      "tag": "oppose",
+      "text": "不向外部服务发送这批合成笔记内容。",
+      "start": 28,
+      "end": 45,
+      "sourceTag": "反对",
+      "grounded": true
+    },
+    {
+      "tag": "tradeoff",
+      "text": "更短展示与保留全部措辞之间需要取舍。",
+      "start": 50,
+      "end": 68,
+      "sourceTag": "权衡",
+      "grounded": true
+    },
+    {
+      "tag": "open",
+      "text": "是否增加更多展示选项仍然等待确认。",
+      "start": 73,
+      "end": 90,
+      "sourceTag": "待定",
+      "grounded": true
+    },
+    {
+      "tag": "plan",
+      "text": "下一步由人工检查每个原文定位范围。",
+      "start": 95,
+      "end": 112,
+      "sourceTag": "计划",
+      "grounded": true
+    },
+    {
+      "tag": "decision",
+      "text": "本次保留原有模型设置和扩展权限。",
+      "start": 117,
+      "end": 133,
+      "sourceTag": "决定",
+      "grounded": true
+    },
+    {
+      "tag": "risk",
+      "text": "标签仅靠词法可能错误归类普通语句。",
+      "start": 138,
+      "end": 155,
+      "sourceTag": "风险",
+      "grounded": true
+    },
+    {
+      "tag": "neutral",
+      "text": "这些文字只用于本次无害上线验收。",
+      "start": 160,
+      "end": 176,
+      "sourceTag": "中性",
+      "grounded": true
+    }
+  ]
+}

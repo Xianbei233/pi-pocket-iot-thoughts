@@ -1,0 +1,88 @@
+{
+  "view": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {
+      "enabled": false,
+      "profile": "balanced",
+      "maxNodes": 2
+    },
+    "sources": {
+      "enabled": "env",
+      "profile": "env",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "env",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "4698def6de5c6b3d51db2e8044d5ae531e7df2ea99d4703b117de261123005d3",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": false,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  },
+  "status": "模块已加载 / module loaded算法执行 / algorithm off热应用 / hot apply",
+  "text": "odes returned by one extraction; 1–16.来源：环境锁定 / env\n\n环境锁定 / env locked：保存值 / stored 8，生效值 / effective 2。\n\n最大输出字符数 / Maximum output characters\n\n压缩结果的字符上限，且不得大于最大输入字符数。单位：UTF-16 单元。 Output limit, at most the input limit; UTF-16 units.来源：已保存 / saved\n\n保存值 / stored 8000，生效值 / effective 8000。\n\n超时 / Timeout\n\n一次整理的时间上限。单位：毫秒。范围 10–5000。 Time limit for one extraction; milliseconds, 10–5000.来源：已保存 / saved\n\n保存值 / stored 1000，生效值 / effective 1000。\n\n保存 / Save\n刷新 / Refresh\n恢复保存的默认值 / Reset saved defaults\n\n只会写回默认保存值；环境变量仍然优先。 / Writes the saved defaults only; environment overrides still win. It does not unload the module or change Pocket settings.\n\n恢复默认值 / Reset…\n\n生效顺序 / precedence：默认值 / defaults < 保存值 / saved < 环境变量 / env。保存写入 Pocket 数据目录下的模块私有配置文件；保存后无需重启，下一次工具调用使用新值。 / Saves to the module's own config file and applies to the next tool call without a restart. 字符数是 UTF-16 单元，不是 token / UTF-16 units, not tokens. 插件开关和卸载在 Menu → Extensions / plugin switch and removal stay there. revision 4698def6de5c…"
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · mobile 390×844

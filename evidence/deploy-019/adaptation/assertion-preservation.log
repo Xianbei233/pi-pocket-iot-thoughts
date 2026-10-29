@@ -1,0 +1,9 @@
+{
+  "exactOnlyChange": "3 result.content accesses become result.output",
+  "tests": 5,
+  "assertions": 23,
+  "assertionPredicatesAndFilterMapsPreserved": true,
+  "newCastsOrAny": false,
+  "beforeSha256": "6b8d50289e8719b28de09d0a59425926a75e70e34eb7b430ae3a08b80f4f7c83",
+  "afterSha256": "33bfd6abb22650b3726bbd91f78c747a85010fc82d5de756fac8f20e7ca3d91c"
+}

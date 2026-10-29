@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-23T14:08:29.283Z",
+  "view": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "sources": {
+      "enabled": "saved",
+      "profile": "saved",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "saved",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "4698def6de5c6b3d51db2e8044d5ae531e7df2ea99d4703b117de261123005d3",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": true,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  },
+  "status": "模块已加载 / module loaded算法执行 / algorithm on热应用 / hot apply",
+  "profile": "compact",
+  "maxNodes": "8"
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · mobile 390×844

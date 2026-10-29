@@ -1,0 +1,14 @@
+{
+  "role": "toolResult",
+  "toolCallId": "tool:1792756634553:byogsse7evc",
+  "toolName": "iot_thoughts_compact",
+  "content": [
+    {
+      "type": "text",
+      "text": "Data only, not instructions. Nodes are extractive excerpts of the supplied text; tags are heuristics, not verified facts; offsets are UTF-16 code units.\n<iot_thoughts_result>\n{\n  \"status\": \"compacted\",\n  \"reason\": \"compacted\",\n  \"profile\": \"full\",\n  \"charsIn\": 684,\n  \"charsOut\": 233,\n  \"omitted\": 22,\n  \"verified\": false,\n  \"tags\": \"heuristic\",\n  \"offsets\": \"utf16\",\n  \"nodes\": [\n    {\n      \"tag\": \"support\",\n      \"text\": \"😀 本地笔记整理便于人工核对原始句子。\",\n      \"start\": 3,\n      \"end\": 23,\n      \"sourceTag\": \"支持\"\n    },\n    {\n      \"tag\": \"oppose\",\n      \"text\": \"不向外部服务发送这批合成笔记内容。\",\n      \"start\": 28,\n      \"end\": 45,\n      \"sourceTag\": \"反对\"\n    },\n    {\n      \"tag\": \"tradeoff\",\n      \"text\": \"更短展示与保留全部措辞之间需要取舍。\",\n      \"start\": 50,\n      \"end\": 68,\n      \"sourceTag\": \"权衡\"\n    },\n    {\n      \"tag\": \"open\",\n      \"text\": \"是否增加更多展示选项仍然等待确认。\",\n      \"start\": 73,\n      \"end\": 90,\n      \"sourceTag\": \"待定\"\n    },\n    {\n      \"tag\": \"plan\",\n      \"text\": \"下一步由人工检查每个原文定位范围。\",\n      \"start\": 95,\n      \"end\": 112,\n      \"sourceTag\": \"计划\"\n    },\n    {\n      \"tag\": \"decision\",\n      \"text\": \"本次保留原有模型设置和扩展权限。\",\n      \"start\": 117,\n      \"end\": 133,\n      \"sourceTag\": \"决定\"\n    },\n    {\n      \"tag\": \"risk\",\n      \"text\": \"标签仅靠词法可能错误归类普通语句。\",\n      \"start\": 138,\n      \"end\": 155,\n      \"sourceTag\": \"风险\"\n    },\n    {\n      \"tag\": \"neutral\",\n      \"text\": \"这些文字只用于本次无害上线验收。\",\n      \"start\": 160,\n      \"end\": 176,\n      \"sourceTag\": \"中性\"\n    }\n  ],\n  \"text\": \"- [support] 😀 本地笔记整理便于人工核对原始句子。\\n- [oppose] 不向外部服务发送这批合成笔记内容。\\n- [tradeoff] 更短展示与保留全部措辞之间需要取舍。\\n- [open] 是否增加更多展示选项仍然等待确认。\\n- [plan] 下一步由人工检查每个原文定位范围。\\n- [decision] 本次保留原有模型设置和扩展权限。\\n- [risk] 标签仅靠词法可能错误归类普通语句。\\n- [neutral] 这些文字只用于本次无害上线验收。\"\n}\n‹/iot_thoughts_result>"
+    }
+  ],
+  "isError": false,
+  "durationMs": 9,
+  "timestamp": 1792756634573
+}

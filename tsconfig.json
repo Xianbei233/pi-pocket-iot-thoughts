@@ -3,7 +3,7 @@
         "target": "ES2024",
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
-        "lib": ["ES2024"],
+        "lib": ["ES2024", "DOM"],
         "strict": true,
         "noEmit": true,
         "allowImportingTsExtensions": true,
@@ -14,8 +14,10 @@
         "noUnusedLocals": true,
         "noFallthroughCasesInSwitch": true,
         "forceConsistentCasingInFileNames": true,
-        "types": ["node"]
+        "types": ["node"],
+        "allowJs": true,
+        "checkJs": true
     },
-    "include": ["iot-thoughts.ts", "test/**/*.ts", "scripts/**/*.ts"],
+    "include": ["iot-thoughts.ts", "iot-thoughts/index.js", "test/**/*.ts", "scripts/**/*.ts"],
     "exclude": ["node_modules", "dist", "evidence"]
 }

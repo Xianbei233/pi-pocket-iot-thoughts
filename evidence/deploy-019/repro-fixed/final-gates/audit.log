@@ -1,0 +1,18 @@
+{
+  "candidateSha256": "31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e",
+  "size": 22672,
+  "exact9RegularFiles": true,
+  "all8ManifestDigestsValid": true,
+  "sourceSha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+  "manifestSha256": "1525899983a0c210f421e4e81ea1a9b06e268cb85afbba816c1465f7edca0fca",
+  "sourceDiffSha256": "3bf1291888b16872f38dc500000ef17b19e5b63b912fdcd25fa4f9d200f1e523",
+  "onlyNegationAndCommentChangedSinceAdaptedCandidate": true,
+  "originalRegressionBodyPreserved": true,
+  "originalOtherTestsPreserved": true,
+  "originalPredicateBytesPreserved": true,
+  "originalRequestBytesPreserved": true,
+  "originalCases": 45,
+  "addedCases": 11,
+  "expectedTotalCases": 56,
+  "tmpPreserved": true
+}

@@ -1,0 +1,11 @@
+package/LICENSE
+package/PROVENANCE.md
+package/README.md
+package/config.example.json
+package/docs/design.md
+package/docs/install.md
+package/iot-thoughts.ts
+package/iot-thoughts/index.js
+package/iot-thoughts/style.css
+package/manifest.json
+package/package.json

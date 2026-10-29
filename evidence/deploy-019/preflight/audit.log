@@ -1,0 +1,22 @@
+{
+  "archiveBytes": 22497,
+  "archiveSha256": "81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689",
+  "entries": [
+    "LICENSE",
+    "PROVENANCE.md",
+    "README.md",
+    "config.example.json",
+    "docs/design.md",
+    "docs/install.md",
+    "iot-thoughts.ts",
+    "manifest.json",
+    "package.json"
+  ],
+  "exact9RegularFiles": true,
+  "allArchiveFilesEqualWorkingFiles": true,
+  "manifestAll8DigestsValid": true,
+  "sourceSha256": "4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd",
+  "manifestSha256": "4618d4156542f1fadb0e37f8bba9c8a7a851778ce35f0257058b4516dec097de",
+  "pocketHead": "eae8ccf6c615ea2188f9b88e9252455917b081d4",
+  "pluginHead": "c570eb35a1a0a0c157762fd9f319948e6dca66f4"
+}

@@ -1,0 +1,77 @@
+{
+  "attribution": "Planner-supplied evidence; not independent tester UI verification",
+  "desktop": {
+    "verifiedAt": "2026-10-23T07:57:39.244Z",
+    "authenticatedProductionHomepage": true,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "horizontalOverflow": false,
+    "getExtensions": {
+      "http": 200,
+      "modules": 27,
+      "enabled": 25,
+      "errors": 0,
+      "iotAbsent": true
+    },
+    "windowErrors": [],
+    "unhandledRejections": [],
+    "console": "empty"
+  },
+  "mobile": {
+    "verifiedAt": "2026-10-23T07:58:22.968Z",
+    "authenticatedProductionHomepage": true,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "horizontalOverflow": false,
+    "getExtensions": {
+      "http": 200,
+      "modules": 27,
+      "enabled": 25,
+      "errors": 0,
+      "iotAbsent": true
+    },
+    "windowErrors": [],
+    "unhandledRejections": [],
+    "console": "empty"
+  },
+  "screenshots": {
+    "observedInPlannerBrowserTool": true,
+    "returnedAs": "viewport images",
+    "filesystemPaths": null,
+    "archivedPng": false
+  },
+  "enabledPluginUi": {
+    "desktop": "UNVERIFIED",
+    "mobile": "UNVERIFIED"
+  },
+  "productionAcceptance": "FAILED; not a production pass",
+  "rawProductOutput": "not captured",
+  "exactFailedPredicate": "not captured",
+  "testerIndependentBlankHandoffEvidence": "unchanged",
+  "adaptedSource": "frozen and uncommitted because deployment failed",
+  "usage": {
+    "roles": [
+      "planner",
+      "developer",
+      "tester"
+    ],
+    "generation": "not obtained",
+    "input": "not obtained",
+    "cacheRead": "not obtained",
+    "cacheWrite": "not obtained",
+    "outputIncludingReasoning": "not obtained",
+    "totalInput": "not obtained",
+    "averageContext": "not obtained",
+    "maximumContext": "not obtained",
+    "toolReturnBytes": "not obtained"
+  },
+  "additionalProbes": false
+}

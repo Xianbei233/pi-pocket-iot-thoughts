@@ -1,0 +1,11 @@
+{
+  "realLoader": true,
+  "nativeFaux": true,
+  "unauthorizedNoWrites": true,
+  "hotDisabled": true,
+  "hotProfileCap": true,
+  "reload": true,
+  "restart": true,
+  "restoredDefaults": true,
+  "paidProviderRequests": 0
+}

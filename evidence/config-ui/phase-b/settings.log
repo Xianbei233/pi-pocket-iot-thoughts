@@ -1,0 +1,102 @@
+✔ a previously loaded factory refreshes committed settings on GET and next tool call (114.787986ms)
+✔ external valid settings refresh safely without accepting the old revision for a save (29.717156ms)
+✔ an existing own directory must actually become 0700 before a successful save (12.828385ms)
+✔ foreign own-path lock yields bounded 409 without removing it or changing config (1560.002141ms)
+✔ disposal while waiting for another version lock aborts before commit and leaves foreign lock (53.263938ms)
+✔ config defaults do not seed own files; routes/client explicitly owner-only (21.992734ms)
+✔ save persists atomically with restrictive modes, hot apply, reset confirmation and reload (52.481222ms)
+✔ in-flight tool uses call-start snapshot; later call uses saved profile and node cap (55.369527ms)
+✔ strict full-settings rejection preserves state and disk: unknown (7.029987ms)
+✔ strict full-settings rejection preserves state and disk: missing (5.542568ms)
+✔ strict full-settings rejection preserves state and disk: fraction (4.748119ms)
+✔ strict full-settings rejection preserves state and disk: negative (2.317208ms)
+✔ strict full-settings rejection preserves state and disk: profile (4.724861ms)
+✔ strict full-settings rejection preserves state and disk: cross minimum (7.677838ms)
+✔ strict full-settings rejection preserves state and disk: cross output (6.747128ms)
+✔ strict full-settings rejection preserves state and disk: array (20.638015ms)
+✔ strict full-settings rejection preserves state and disk: null (5.780239ms)
+✔ strict full-settings rejection preserves state and disk: inherited (7.035784ms)
+✔ strict full-settings rejection preserves state and disk: accessor (9.128241ms)
+✔ top-level getters/prototypes, unknown body fields and oversized body reject without executing accessors (3.365462ms)
+✔ owner check rejects direct guest/viewer requests and reset cannot bypass it (5.833109ms)
+✔ stale and concurrent revisions yield a single winner and preserve committed bytes (17.098018ms)
+✖ external disk revision conflict leaves hot snapshot and external file unchanged (13.506199ms)
+✔ explicit env keys override saved keys only; reset keeps env and merged bounds validate before write (14.892277ms)
+✔ invalid env fails closed without raw echo: "" (1.561521ms)
+✔ invalid env fails closed without raw echo: " " (0.56921ms)
+✔ invalid env fails closed without raw echo: "not-json-SYNTHETIC" (0.360314ms)
+✔ invalid env fails closed without raw echo: "[]" (0.26435ms)
+✔ invalid env fails closed without raw echo: "null" (0.232922ms)
+✔ invalid env fails closed without raw echo: "{\"unknown\":\"SYNTHETIC\"}" (1.372319ms)
+✔ unsafe existing own config fails closed: directory-link (10.363531ms)
+✔ unsafe existing own config fails closed: file-link (3.672346ms)
+✔ unsafe existing own config fails closed: hardlink (2.615921ms)
+✔ unsafe existing own config fails closed: fifo (11.831255ms)
+✔ unsafe existing own config fails closed: large (1.982946ms)
+✔ unsafe existing own config fails closed: malformed (5.684765ms)
+✖ aborted and unloaded saves preserve valid file and memory with no temporary residue (6.308592ms)
+✔ two factory versions sharing one directory cannot both commit the same revision (57.428739ms)
+✖ failed config-path precommit preserves valid hot snapshot and unrelated bytes (12.612923ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 36
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2498.582612
+
+✖ failing tests:
+
+test at test/config-settings.test.ts:251:1
+✖ external disk revision conflict leaves hot snapshot and external file unchanged (13.506199ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    {
+      enabled: true,
+      maxInputChars: 24000,
+  +   maxNodes: 5,
+  -   maxNodes: 8,
+      maxOutputChars: 8000,
+      minChars: 400,
+      profile: 'full',
+      timeoutMs: 1000
+    }
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:269:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { enabled: true, profile: 'full', minChars: 400, maxInputChars: 24000, maxNodes: 5, maxOutputChars: 8000, timeoutMs: 1000 },
+    expected: { enabled: true, profile: 'full', minChars: 400, maxInputChars: 24000, maxNodes: 8, maxOutputChars: 8000, timeoutMs: 1000 },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at test/config-settings.test.ts:359:1
+✖ aborted and unloaded saves preserve valid file and memory with no temporary residue (6.308592ms)
+  Error: iot-thoughts: cancelled
+      at Object.error (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-support.ts:40:67)
+      at fail (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/iot-thoughts.ts:1242:20)
+      at Object.handler (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/iot-thoughts.ts:1318:27)
+      at async Object.call (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-support.ts:53:17)
+      at async TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:386:23)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    status: 408
+  }
+
+test at test/config-settings.test.ts:439:1
+✖ failed config-path precommit preserves valid hot snapshot and unrelated bytes (12.612923ms)
+  Error: iot-thoughts: config-operation-failed
+      at Object.error (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-support.ts:40:67)
+      at fail (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/iot-thoughts.ts:1242:20)
+      at Object.handler (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/iot-thoughts.ts:1320:23)
+      at async Object.call (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-support.ts:53:17)
+      at async TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:456:23)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    status: 500
+  }

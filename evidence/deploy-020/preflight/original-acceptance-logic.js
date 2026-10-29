@@ -1,0 +1,9 @@
+// Reconstructed from the Owner's supplied original combined predicate. No acceptance standard is changed.
+export function diagnose(source, payload, expectedTags) {
+    const nodes = Array.isArray(payload.nodes) ? payload.nodes : [];
+    const counts = Object.fromEntries(expectedTags.map(tag => [tag, nodes.filter(node => node.tag === tag).length]));
+    const ranges = nodes.map((node, index) => ({index, tag:node.tag, sourceTag:node.sourceTag, start:node.start, end:node.end, text:node.text, integers:Number.isInteger(node.start)&&Number.isInteger(node.end), inBounds:node.start>=0&&node.end<=source.length&&node.start<node.end, sourceSlice:source.slice(node.start,node.end), grounded:source.slice(node.start,node.end)===node.text, containsEmoji:node.text.includes('😀')}));
+    const conditions = {statusCompacted:payload.status==='compacted', nodeCount8:nodes.length===8, all8Tags:expectedTags.every(tag=>nodes.some(node=>node.tag===tag)), allGrounded:nodes.every(node=>source.slice(node.start,node.end)===node.text), emojiNode:nodes.some(node=>node.text.includes('😀')), falseVerified:payload.verified===false, shorter:typeof payload.text==='string'&&payload.text.length<source.trim().length};
+    const combined = conditions.statusCompacted && conditions.nodeCount8 && conditions.all8Tags && conditions.allGrounded && conditions.emojiNode && conditions.falseVerified && conditions.shorter;
+    return {conditions, combined, expectedTags, expectedCounts:Object.fromEntries(expectedTags.map(tag=>[tag,1])), actualCounts:counts, actualTags:nodes.map(node=>node.tag), missingTags:expectedTags.filter(tag=>counts[tag]===0), nodeCount:nodes.length, status:payload.status, reason:payload.reason, ranges, sourceUtf16Length:source.length, sourceTrimmedUtf16Length:source.trim().length, resultUtf16Length:payload.text?.length, exactKeptSource:payload.text===source};
+}

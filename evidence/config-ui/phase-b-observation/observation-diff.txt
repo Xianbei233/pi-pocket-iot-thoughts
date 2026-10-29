@@ -1,0 +1,118 @@
+--- before
++++ after
+@@ -1,4 +1,5 @@
+ import assert from "node:assert/strict";
++import { createHash } from "node:crypto";
+ import {
+     chmodSync,
+     existsSync,
+@@ -248,7 +249,7 @@
+     }
+ });
+ 
+-test("external disk revision conflict leaves hot snapshot and external file unchanged", async () => {
++test("stale external write rejects and fresh read sees the preserved external file", async () => {
+     const box = sandbox();
+     const restore = withEnv(undefined);
+     try {
+@@ -266,7 +267,11 @@
+             statusIs(409),
+         );
+         assert.equal(readFileSync(box.file, "utf8"), external);
+-        assert.deepEqual((await h.call("GET", "config")).effective, DEFAULT_CONFIG);
++        const refreshed = await h.call("GET", "config");
++        assert.deepEqual(refreshed.effective, fullSettings({ maxNodes: 5 }));
++        assert.deepEqual(refreshed.stored, fullSettings({ maxNodes: 5 }));
++        assert.equal(refreshed.revision, createHash("sha256").update(external).digest("hex"));
++        assert.equal(readFileSync(box.file, "utf8"), external);
+         await h.dispose();
+     } finally {
+         restore();
+@@ -369,21 +374,32 @@
+         const bytes = readFileSync(box.file);
+         const stop = new AbortController();
+         stop.abort();
+-        await assert.rejects(() =>
+-            h.call(
+-                "POST",
+-                "config",
+-                { settings: fullSettings({ maxNodes: 6 }), revision: saved.revision },
+-                "owner",
+-                stop.signal,
+-            ),
+-        );
+-        await h.dispose();
+-        await assert.rejects(() =>
+-            h.call("POST", "config", { settings: fullSettings({ maxNodes: 6 }), revision: saved.revision }),
++        await assert.rejects(
++            () =>
++                h.call(
++                    "POST",
++                    "config",
++                    { settings: fullSettings({ maxNodes: 6 }), revision: saved.revision },
++                    "owner",
++                    stop.signal,
++                ),
++            statusIs(408),
++        );
++        await h.dispose();
++        await assert.rejects(
++            () =>
++                h.call("POST", "config", {
++                    settings: fullSettings({ maxNodes: 6 }),
++                    revision: saved.revision,
++                }),
++            statusIs(408),
+         );
+         assert.deepEqual(readFileSync(box.file), bytes);
+-        assert.equal((await h.call("GET", "config")).effective.maxNodes, 4);
++        await assert.rejects(() => h.call("GET", "config"), statusIs(408));
++        const live = await moduleHarness(box.dataDir);
++        assert.equal((await live.call("GET", "config")).effective.maxNodes, 4);
++        assert.deepEqual(readFileSync(box.file), bytes);
++        await live.dispose();
+         assert.deepEqual(readdirSync(box.directory), ["config.json"]);
+         chmodSync(box.directory, 0o700);
+         rmSync(box.file);
+@@ -450,15 +466,30 @@
+         rmSync(box.file);
+         mkdirSync(box.file);
+         writeFileSync(join(box.file, "sentinel"), bytes);
+-        await assert.rejects(() =>
+-            h.call("POST", "config", { settings: fullSettings({ maxNodes: 6 }), revision: saved.revision }),
+-        );
+-        assert.equal((await h.call("GET", "config")).effective.maxNodes, 4);
++        await assert.rejects(
++            () =>
++                h.call("POST", "config", {
++                    settings: fullSettings({ maxNodes: 6 }),
++                    revision: saved.revision,
++                }),
++            statusIs(500),
++        );
++        await assert.rejects(() => h.call("GET", "config"), statusIs(500));
+         assert.deepEqual(readFileSync(join(box.file, "sentinel")), bytes);
+         assert.deepEqual(readdirSync(box.directory), ["config.json"]);
+-        await h.dispose();
+-    } finally {
+-        restore();
+-        box.cleanup();
+-    }
+-});
++        rmSync(box.file, { recursive: true });
++        writeFileSync(box.file, bytes, { mode: 0o600 });
++        const restored = await h.call("GET", "config");
++        assert.equal(restored.effective.maxNodes, 4);
++        assert.deepEqual(restored.effective, saved.effective);
++        assert.deepEqual(restored.stored, saved.stored);
++        assert.equal(restored.revision, saved.revision);
++        assert.deepEqual(readFileSync(box.file), bytes);
++        assert.equal(lstatSync(box.file).mode & 0o777, 0o600);
++        assert.deepEqual(readdirSync(box.directory), ["config.json"]);
++        await h.dispose();
++    } finally {
++        restore();
++        box.cleanup();
++    }
++});
+

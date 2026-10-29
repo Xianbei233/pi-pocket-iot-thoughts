@@ -1,0 +1,44 @@
+{
+  "source": "Actual per-role counters are not exposed; no metric probe was sent",
+  "roles": {
+    "planner": {
+      "generation": "not obtained",
+      "input": "not obtained",
+      "cacheRead": "not obtained",
+      "cacheWrite": "not obtained",
+      "outputIncludingReasoning": "not obtained",
+      "totalInput": "not obtained",
+      "averageContext": "not obtained",
+      "maximumContext": "not obtained",
+      "toolReturnBytes": "not obtained"
+    },
+    "developer": {
+      "generation": "not obtained",
+      "input": "not obtained",
+      "cacheRead": "not obtained",
+      "cacheWrite": "not obtained",
+      "outputIncludingReasoning": "not obtained",
+      "totalInput": "not obtained",
+      "averageContext": "not obtained",
+      "maximumContext": "not obtained",
+      "toolReturnBytes": "not obtained"
+    },
+    "tester": {
+      "generation": "not obtained",
+      "input": "not obtained",
+      "cacheRead": "not obtained",
+      "cacheWrite": "not obtained",
+      "outputIncludingReasoning": "not obtained",
+      "totalInput": "not obtained",
+      "averageContext": "not obtained",
+      "maximumContext": "not obtained",
+      "toolReturnBytes": "not obtained"
+    }
+  },
+  "testerRequestedModel": "hww/gpt-6.1-sol",
+  "testerRequestedThinking": "high",
+  "actualRuntimeModelThinkingMetadata": "not obtained",
+  "modelChanged": false,
+  "fallbackUsed": false,
+  "toolAndFauxCountsAreNotUsage": true
+}

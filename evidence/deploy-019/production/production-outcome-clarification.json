@@ -1,0 +1,45 @@
+{
+  "source": "Planner clarification in this task",
+  "actualProductionToolCall": "succeeded",
+  "jsonParse": "succeeded",
+  "strictCombinedAcceptance": "FAILED",
+  "combinedPredicate": [
+    "status compacted",
+    "8 nodes",
+    "all 8 tags",
+    "UTF-16 grounding",
+    "emoji",
+    "verified false",
+    "shorter"
+  ],
+  "individualFailingCondition": "not captured",
+  "rawOutput": "not retained",
+  "reasonOutputUnavailable": "The script threw before printing the raw payload or individual checks. Failed codemode store writes were not committed.",
+  "syntheticInput": {
+    "sentences": "8 Chinese tagged sentences: support/oppose/tradeoff/open/plan/decision/risk/neutral",
+    "contains": [
+      "emoji",
+      "CRLF"
+    ],
+    "background": "22 identical background lines containing 无害"
+  },
+  "cause": "not established",
+  "confirmedProductBug": false,
+  "confirmedMissingCategory": false,
+  "fixtureRetry": false,
+  "recoveryAttemptByTester": false,
+  "plannerReportedRollback": {
+    "moduleCount": 27,
+    "enabledCount": 25,
+    "errorCount": 0,
+    "iotAbsent": true,
+    "officiallyDisabled": true
+  },
+  "testerBrowser": {
+    "url": "about:blank",
+    "requestedGlobals": "all absent",
+    "finalAuthenticatedGet": "not obtained",
+    "rollbackUiDesktop": "not verified",
+    "rollbackUiMobile": "not verified"
+  }
+}

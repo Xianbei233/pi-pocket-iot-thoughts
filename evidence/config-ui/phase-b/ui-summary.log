@@ -1,0 +1,196 @@
+{
+  "desktop-disabled-save.txt": {
+    "stored": {
+      "enabled": false,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "模块已加载 / module loaded算法执行 / algorithm off热应用 / hot apply"
+  },
+  "mobile-compact-save-confirmed.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "模块已加载 / module loaded算法执行 / algorithm on热应用 / hot apply"
+  },
+  "mobile-page-persistence-confirmed.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "module-reload-readback.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "env-locks-visible.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "env-reset-view.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "模块已加载 / module loaded算法执行 / algorithm off热应用 / hot apply"
+  },
+  "final-restored-view.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "模块已加载 / module loaded算法执行 / algorithm on热应用 / hot apply"
+  },
+  "conflict-visible-refresh.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": "配置已在其他标签页更新，页面已刷新，请重新保存 / Changed in another tab; reloaded, save again",
+    "status": "模块已加载 / module loaded算法执行 / algorithm on热应用 / hot apply"
+  },
+  "tool-disabled-desktop.json": {
+    "status": "kept",
+    "reason": "disabled",
+    "profile": "full",
+    "nodes": 0
+  },
+  "tool-mobile-compact.json": {
+    "status": "compacted",
+    "reason": "compacted",
+    "profile": "compact",
+    "nodes": 3
+  },
+  "tool-restored-defaults.json": {
+    "status": "compacted",
+    "reason": "compacted",
+    "profile": "full",
+    "nodes": 4
+  }
+}

@@ -1,0 +1,74 @@
+✔ config defaults do not seed own files; routes/client explicitly owner-only (43.25617ms)
+✔ save persists atomically with restrictive modes, hot apply, reset confirmation and reload (37.016095ms)
+✔ in-flight tool uses call-start snapshot; later call uses saved profile and node cap (34.75511ms)
+✔ strict full-settings rejection preserves state and disk: unknown (7.524743ms)
+✔ strict full-settings rejection preserves state and disk: missing (3.614098ms)
+✔ strict full-settings rejection preserves state and disk: fraction (3.626041ms)
+✔ strict full-settings rejection preserves state and disk: negative (3.518764ms)
+✔ strict full-settings rejection preserves state and disk: profile (5.852524ms)
+✔ strict full-settings rejection preserves state and disk: cross minimum (3.849324ms)
+✔ strict full-settings rejection preserves state and disk: cross output (5.507786ms)
+✔ strict full-settings rejection preserves state and disk: array (5.19713ms)
+✔ strict full-settings rejection preserves state and disk: null (4.620726ms)
+✔ strict full-settings rejection preserves state and disk: inherited (3.668574ms)
+✔ strict full-settings rejection preserves state and disk: accessor (4.006329ms)
+✖ top-level getters/prototypes, unknown body fields and oversized body reject without executing accessors (7.881146ms)
+✔ owner check rejects direct guest/viewer requests and reset cannot bypass it (9.531784ms)
+✔ stale and concurrent revisions yield a single winner and preserve committed bytes (10.210855ms)
+✔ external disk revision conflict leaves hot snapshot and external file unchanged (24.09629ms)
+✔ explicit env keys override saved keys only; reset keeps env and merged bounds validate before write (9.003432ms)
+✔ invalid env fails closed without raw echo: "" (1.350948ms)
+✔ invalid env fails closed without raw echo: " " (0.787604ms)
+✔ invalid env fails closed without raw echo: "not-json-SYNTHETIC" (0.496854ms)
+✔ invalid env fails closed without raw echo: "[]" (0.409412ms)
+✔ invalid env fails closed without raw echo: "null" (0.345437ms)
+✔ invalid env fails closed without raw echo: "{\"unknown\":\"SYNTHETIC\"}" (0.590512ms)
+✔ unsafe existing own config fails closed: directory-link (10.093102ms)
+✔ unsafe existing own config fails closed: file-link (4.345899ms)
+✔ unsafe existing own config fails closed: hardlink (3.713552ms)
+✔ unsafe existing own config fails closed: fifo (18.200116ms)
+✔ unsafe existing own config fails closed: large (4.174089ms)
+✔ unsafe existing own config fails closed: malformed (5.553602ms)
+✔ aborted and unloaded saves preserve valid file and memory with no temporary residue (10.005101ms)
+✖ two factory versions sharing one directory cannot both commit the same revision (13.385509ms)
+✔ failed config-path precommit preserves valid hot snapshot and unrelated bytes (10.397052ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 32
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 954.128749
+
+✖ failing tests:
+
+test at test/config-settings.test.ts:164:1
+✖ top-level getters/prototypes, unknown body fields and oversized body reject without executing accessors (7.881146ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:183:13)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/config-settings.test.ts:396:1
+✖ two factory versions sharing one directory cannot both commit the same revision (13.385509ms)
+  AssertionError [ERR_ASSERTION]: only one version can commit the original disk revision
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:423:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

@@ -1,0 +1,36 @@
+{
+  "startedAt": "2026-10-23T08:19:54.808Z",
+  "stage": "isolated reproduction only",
+  "paidProviderRequests": 0,
+  "invocations": [
+    {
+      "run": 1,
+      "toolIsError": false,
+      "providerCalls": 2,
+      "combinedAcceptance": true,
+      "status": "compacted",
+      "reason": "compacted",
+      "rawTextSha256": "e8592a9a8c028d413fb21c22528dddcd4a120090e2cce47ed11fb3ba2b7df3b2",
+      "rawTextBytes": 2296,
+      "oneEach8Tags": true,
+      "rangeBounds": true
+    },
+    {
+      "run": 2,
+      "toolIsError": false,
+      "providerCalls": 2,
+      "combinedAcceptance": true,
+      "status": "compacted",
+      "reason": "compacted",
+      "rawTextSha256": "e8592a9a8c028d413fb21c22528dddcd4a120090e2cce47ed11fb3ba2b7df3b2",
+      "rawTextBytes": 2296,
+      "oneEach8Tags": true,
+      "rangeBounds": true
+    }
+  ],
+  "errors": [],
+  "exitCode": 0,
+  "byteIdenticalToolText": true,
+  "isolatedCleanup": true,
+  "finishedAt": "2026-10-23T08:19:56.902Z"
+}

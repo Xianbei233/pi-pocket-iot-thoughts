@@ -1,0 +1,35 @@
+{
+  "kind": "iot-thoughts planned uninstall receipt (acceptance PASS)",
+  "createdAt": "2026-10-23T08:31:31.986Z",
+  "officialDisable": {
+    "http": 200,
+    "at": "2026-10-23T08:31:00.310Z",
+    "enabled": false,
+    "extensions": []
+  },
+  "removed": {
+    "path": "/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts",
+    "inode": 5549717,
+    "sha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+    "unlinkExit": 0,
+    "targetAbsent": true
+  },
+  "otherExtensions": {
+    "other_files_unchanged": true,
+    "added": [],
+    "removed": []
+  },
+  "config": {
+    "path": "/home/xianbei233/.pi-pocket/config.json",
+    "liveSha256": "cdd86518e826573d18be37fca93f09a050f5ca31bcc4752a5ecb090449090c48",
+    "backupSha256": "cdd86518e826573d18be37fca93f09a050f5ca31bcc4752a5ecb090449090c48",
+    "matchesBackup": true,
+    "overwritten": false,
+    "note": "official disabled marker may remain; not edited"
+  },
+  "initialAbsenceRestored": true,
+  "productFailureRollback": false,
+  "restart": false,
+  "sourceChanges": false,
+  "push": false
+}

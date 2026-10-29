@@ -1,0 +1,39 @@
+{
+  "permissionCheck": {
+    "normalDirectoryMode": "0700 verified",
+    "normalFileMode": "0600 verified",
+    "chmodFailureInjection": "not performed; swallowed chmod failure requires review, not independently proven runtime failure"
+  },
+  "concurrency": {
+    "singleFactoryQueue": "tested; one winner",
+    "twoFactorySameDataDir": "tested; both committed; confirmed lost update",
+    "externalRevisionBeforeWrite": "tested conflict; hot snapshot and bytes preserved",
+    "externalChangeDuringFsyncToRename": "not independently injected"
+  },
+  "cancellation": {
+    "alreadyAbortedRequest": "tested; previous file/memory preserved",
+    "alreadyDisposedModule": "tested; previous file/memory preserved",
+    "disposeAfterTempWriteBeforeRename": "not independently injected"
+  },
+  "unsafePaths": {
+    "directorySymlink": true,
+    "fileSymlink": true,
+    "hardlink": true,
+    "fifo": true,
+    "oversizedFile": true,
+    "malformedFile": true,
+    "deviceNode": "not created; not verified"
+  },
+  "atomicFailure": {
+    "configTargetChangedToDirectory": "tested; hot snapshot and sentinel preserved",
+    "postRenameFailure": "not independently injected"
+  },
+  "browser": {
+    "desktopVisibleEntryClicked": true,
+    "mobileVisibleEntryClicked": true,
+    "pageRendering": "FAILED",
+    "formsWorkflow": "blocked before controls render",
+    "loadingAndEnglishAndEnvLockUi": "not verified"
+  },
+  "assertionsUnchanged": true
+}

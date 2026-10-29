@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "statusKept": true,
+    "reasonDisabled": true,
+    "exactFullSource": true,
+    "charsIn684": true,
+    "charsOut684": true,
+    "textUtf16Length684": true,
+    "nodesEmpty": true,
+    "verifiedFalse": true,
+    "profileFull": true
+  },
+  "sourceUtf16Length": 684,
+  "returnedUtf16Length": 684,
+  "note": "Disabled-state behavior; original 8-category predicate is reserved for restored defaults."
+}

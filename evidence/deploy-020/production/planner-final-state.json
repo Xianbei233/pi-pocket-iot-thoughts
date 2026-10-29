@@ -1,0 +1,81 @@
+{
+  "attribution": "Planner-supplied authenticated official API, browser, filesystem, and dictionary AST evidence; not independent tester UI",
+  "enable": {
+    "at": "2026-10-23T12:02:35.067Z",
+    "http": 200,
+    "modules": 29,
+    "enabled": 26,
+    "errors": 0,
+    "changedOtherModules": []
+  },
+  "reload": {
+    "at": "2026-10-23T12:02:35.110Z",
+    "http": 200,
+    "modules": 29,
+    "enabled": 26,
+    "errors": 0,
+    "changedOtherModules": []
+  },
+  "essentialUi": {
+    "at": "2026-10-23T12:03:28.921Z",
+    "authenticatedRole": "Owner",
+    "http": 200,
+    "runningPocket": "0.20.0",
+    "title": "Pi Pocket",
+    "controls": 98,
+    "bodyAccessible": true,
+    "windowErrors": [],
+    "rejections": [],
+    "console": "empty after login; earlier 401 cleared",
+    "screenshotMatrixRequested": false,
+    "screenshotMatrixRun": false
+  },
+  "finalGet": {
+    "at": "2026-10-23T12:05:24.607Z",
+    "http": 200,
+    "authenticatedRole": "Owner",
+    "runningPocket": "0.20.0",
+    "modules": 29,
+    "enabled": 26,
+    "errors": 0,
+    "iotEnabled": true,
+    "registeredReadOnlyTool": "iot_thoughts_compact",
+    "changedExistingModules": [],
+    "addedModules": [
+      "iot-thoughts.ts"
+    ],
+    "guardUnchanged": true
+  },
+  "dictionary": {
+    "enabled": true,
+    "locale": "zh-CN",
+    "version": "0.8.0",
+    "strings": 1475,
+    "templates": 295,
+    "countsMethod": "planner AST and authenticated GET",
+    "bytes": 129367,
+    "sha256": "15a0ceb363d92c7d0fc2b75c89a13f88e101285aa417db85039857aeda8e965e",
+    "unchanged": true
+  },
+  "installedSource": {
+    "regularFile": true,
+    "bytes": 29502,
+    "inode": 5697273,
+    "sha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+    "equalsWorkingFile": true
+  },
+  "pocketCheckout": {
+    "head": "d1b97e1d995742dae90b20bcd1ce9545fdfc58c5",
+    "clean": true
+  },
+  "backup": {
+    "directory": "/home/xianbei233/Work/pi-pocket-iot-thoughts-deploy-private-020-20261023-200120",
+    "directoryMode": "0700",
+    "configMode": "0600",
+    "configSnapshotSha256": "1506edf243921d0e28ba109b43b823500f1b078a7b36b6e6e8c494f30ab1d0fd",
+    "extensionsSnapshotSha256": "ee4347844abaf779d5db4124bf9e9203072349554ce3e485ceacfe2c6a90fa5c",
+    "preserved": true
+  },
+  "finalStatus": "DEPLOYED INSTALLED ENABLED",
+  "cleanupAfterPass": false
+}

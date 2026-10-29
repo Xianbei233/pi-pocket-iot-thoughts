@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "independent isolated final readiness",
+  "finalPackageSha256": "a4b1fe83dc95e6572b8aa40e94f8dc7cea4c96ced5dec66f4f60435862accfb3",
+  "testedRuntimePackageSha256": "0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4",
+  "docOnlyDifferences": [
+    "docs/install.md",
+    "manifest.json"
+  ],
+  "runtimeByteIdentical": true,
+  "fullSuite": {
+    "cases": 99,
+    "original": 56,
+    "additional": 43,
+    "pass": 99,
+    "fail": 0,
+    "skip": 0
+  },
+  "observationCorrections": 3,
+  "fullCheckLintFormatExits": 0,
+  "finalIntegrationExit": 0,
+  "finalPackagingExit": 0,
+  "finalAuditExit": 0,
+  "finalInstalledTarByteIdentical": true,
+  "independentDesktopMobileUiPassed": true,
+  "exactRequestTwoPasses": true,
+  "productionChanged": false,
+  "unresolvedDemonstratedBlockers": [],
+  "usage": "not obtained"
+}

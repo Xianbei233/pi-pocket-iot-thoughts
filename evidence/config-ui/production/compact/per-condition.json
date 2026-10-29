@@ -1,0 +1,55 @@
+{
+  "checks": {
+    "profileArgumentOmitted": true,
+    "inputAtLeast400": true,
+    "statusCompacted": true,
+    "savedProfileCompact": true,
+    "oneToThreeNodes": true,
+    "allGrounded": true,
+    "allValidUtf16Bounds": true,
+    "verifiedFalse": true,
+    "strictShorter": true
+  },
+  "ranges": [
+    {
+      "index": 0,
+      "tag": "support",
+      "sourceTag": "Support",
+      "start": 9,
+      "end": 34,
+      "text": "A useful local prototype.",
+      "sourceSlice": "A useful local prototype.",
+      "integers": true,
+      "inBounds": true,
+      "grounded": true
+    },
+    {
+      "index": 1,
+      "tag": "plan",
+      "sourceTag": "Plan",
+      "start": 41,
+      "end": 66,
+      "text": "Run local tests tomorrow.",
+      "sourceSlice": "Run local tests tomorrow.",
+      "integers": true,
+      "inBounds": true,
+      "grounded": true
+    },
+    {
+      "index": 2,
+      "tag": "tradeoff",
+      "sourceTag": "Tradeoff",
+      "start": 77,
+      "end": 110,
+      "text": "Shorter display has less context.",
+      "sourceSlice": "Shorter display has less context.",
+      "integers": true,
+      "inBounds": true,
+      "grounded": true
+    }
+  ],
+  "sourceUtf16Length": 1143,
+  "sourceTrimmedUtf16Length": 1142,
+  "resultUtf16Length": 119,
+  "nodeCount": 3
+}

@@ -1,0 +1,143 @@
+{
+  "attribution": "Planner-supplied production UI, official API, file inventory, and service observations. Not independent tester browser evidence.",
+  "version": "0.2.0",
+  "host": {
+    "version": "0.20.0",
+    "head": "d1b97e1d995742dae90b20bcd1ce9545fdfc58c5",
+    "sdk": "1.3.0",
+    "api": 2
+  },
+  "navigation": {
+    "desktop": {
+      "viewport": "1280x800",
+      "path": "normal HOME -> visible sidebar IoT 配置 / IoT settings",
+      "controlCount": 7,
+      "numberFields": 5,
+      "selector": 1,
+      "switch": 1,
+      "scrollWidth": 1280,
+      "clientWidth": 1280
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "path": "normal HOME -> visible IoT 配置 / IoT settings",
+      "controlCount": 7,
+      "scrollWidth": 390,
+      "clientWidth": 390
+    },
+    "additionalRegisteredEntries": [
+      "Menu -> App",
+      "launcher"
+    ],
+    "privatePageActivationUsed": false
+  },
+  "workflow": {
+    "desktopDisabledSave": true,
+    "disabledPageRefreshPersistence": true,
+    "invalidClient99VisibleBilingualError": true,
+    "invalidServer99Http": 400,
+    "invalidNoConfigChange": true,
+    "resetCancelNoWrite": true,
+    "mobileCompactSave": true,
+    "mobileCompactRefreshPersistence": true,
+    "explicitResetConfirmRestoredOriginal": true,
+    "productionEnvironmentInjected": false
+  },
+  "restoredView": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "revision": "4698def6de5c6b3d51db2e8044d5ae531e7df2ea99d4703b117de261123005d3",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": true,
+      "hotApply": true
+    }
+  },
+  "finalReload": {
+    "at": "2026-10-23T14:52:00.916Z",
+    "http": 200,
+    "ownConfigGetHttp": 200,
+    "moduleEnabled": true,
+    "readOnlyTool": "iot_thoughts_compact",
+    "ownerRoutes": [
+      "GET config",
+      "POST config",
+      "POST reset"
+    ],
+    "clientAccess": "owner",
+    "modules": 30,
+    "enabled": 27,
+    "errors": 0,
+    "localeStrings": 1475,
+    "localeTemplates": 295
+  },
+  "correctedFinalGet": {
+    "at": "2026-10-23T14:53:30.018Z",
+    "meHttp": 200,
+    "listHttp": 200,
+    "role": "Owner",
+    "modules": 30,
+    "enabled": 27,
+    "errors": 0,
+    "allRecordedEnabledStatesMatch": true,
+    "guardEnabled": false,
+    "iotEnabled": true,
+    "layerfsEnabled": true,
+    "dictionaryEnabled": true
+  },
+  "latestFinalGet": {
+    "at": "2026-10-23T14:54:55.091Z",
+    "configHttp": 200,
+    "listHttp": 200,
+    "modules": 30,
+    "enabled": 27,
+    "errors": 0,
+    "iotEnabled": true,
+    "guardEnabled": false,
+    "formProfile": "full",
+    "formMaxNodes": 8,
+    "console": "empty",
+    "sameRestoredConfigRevision": true
+  },
+  "ownConfig": {
+    "directoryMode": "0700",
+    "fileMode": "0600",
+    "entries": [
+      "config.json"
+    ],
+    "lockOrTempResidue": false,
+    "initiallyAbsent": true,
+    "nowPersistedDefaults": true,
+    "effectiveSettingsRestored": true,
+    "physicalAbsenceRestored": false
+  },
+  "diagnostic": {
+    "plannerCompoundScriptThrew": true,
+    "reason": "Compared Guard with a window baseline cleared by actual page refresh",
+    "baselineAbsent": true,
+    "productFailure": false,
+    "correctedSafeApiConfirmedGuardFalseUnchanged": true
+  },
+  "screenshots": {
+    "filesystemPaths": null,
+    "fabricated": false
+  },
+  "finalStatus": "DEPLOYED ENABLED"
+}

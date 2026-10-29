@@ -1,0 +1,2 @@
+cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4  iot-thoughts.ts
+31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e  /home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/deploy-019/repro-fixed/final-gates/test/artifacts/pi-pocket-iot-thoughts-0.1.0.tgz

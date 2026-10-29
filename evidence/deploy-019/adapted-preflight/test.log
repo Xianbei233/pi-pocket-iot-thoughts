@@ -1,0 +1,62 @@
+
+> pi-pocket-iot-thoughts@0.1.0 test
+> node --test test/*.test.ts
+
+✔ config defaults are exact and frozen (3.235137ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (1.973237ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.467653ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (32.409547ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (11.339357ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (16.218846ms)
+✔ empty/short/disabled and not-shorter preserve exact original (1.540288ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (5.606681ms)
+✔ fenced repeated code and factual tool output remain intact (1.715312ms)
+✔ pre-abort and active abort reject, do not return apparent success (3.281861ms)
+✔ concurrent calls cannot leak or reuse another input (4.101733ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (4.532306ms)
+✔ tool calls host defang and warns alongside untrusted result (2.733325ms)
+✔ factory config is read once and malformed env fails closed without echoing content (3.951922ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (32.929448ms)
+✔ caller abort cancels tool and does not retain listeners or timers (24.141618ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (88.448283ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (73.770144ms)
+✔ link script refuses regular-file node_modules without modifying external target (87.104878ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (108.157328ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (147.287112ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (112.701647ms)
+✔ offline pack refuses symlink payload manifest.json (794.492089ms)
+✔ offline pack rejects a tampered source digest (109.663254ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (1102.232445ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (2276.534944ms)
+✔ direct options reject unknown permissions (5.093764ms)
+✔ direct options reject array (0.717274ms)
+✔ direct options reject null (0.297316ms)
+✔ direct options reject inherited (0.233621ms)
+✔ direct options reject symbol key (0.744792ms)
+✔ input over configured max rejects even enabled=true (1.182699ms)
+✔ input over configured max rejects even enabled=false (0.408294ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (31.981068ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (146.009427ms)
+✔ identical text with opposing labels does not lose its negative semantics (5.838485ms)
+✔ conservative inference 尚未决定采用A。 (9.129915ms)
+✔ conservative inference 不支持采用A。 (6.921172ms)
+✔ conservative inference 计划采用A。 (6.456724ms)
+✔ unverified/verified-looking prose must never set verified true (4.938925ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (2.462129ms)
+✔ negative and undecided prose is conservatively labelled: We do not support option A. (7.831907ms)
+✔ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (8.910472ms)
+✔ negative and undecided prose is conservatively labelled: No decision has been made. (6.226177ms)
+✔ negative and undecided prose is conservatively labelled: 还未决定采用A。 (7.467753ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4537.349161
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

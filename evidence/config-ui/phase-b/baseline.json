@@ -1,0 +1,11 @@
+{
+  "pocketHead": "d1b97e1d995742dae90b20bcd1ce9545fdfc58c5",
+  "pluginHead": "c570eb35a1a0a0c157762fd9f319948e6dca66f4",
+  "candidate": "/home/xianbei233/Work/pi-pocket-iot-thoughts/dist/config-ui-0.2.0-fixed/pi-pocket-iot-thoughts-0.2.0.tgz",
+  "candidateSha256": "0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4",
+  "candidateBytes": 35548,
+  "sourceSha256": "14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287",
+  "manifestSha256": "49ea87dddf3963946f7c51e899de6023c62e7827d87e97eea814b885c340f7d5",
+  "node": "v26.10.0",
+  "configEnvPresent": false
+}

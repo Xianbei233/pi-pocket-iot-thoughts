@@ -1,0 +1,10 @@
+uninstall_start=2026-10-23T16:31:31+08:00
+precheck_ok path=/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts ino=5549717 nlink=1 size=29502 sha256=cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4
+precheck_exit=0
+removed path=/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts ino=5549717 sha256=cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4
+unlink_exit=0
+target_absent=ok
+{"other_files_unchanged":true,"added":[],"removed":[]}
+inventory_compare_exit=0
+config_live_sha256=cdd86518e826573d18be37fca93f09a050f5ca31bcc4752a5ecb090449090c48 backup_sha256=cdd86518e826573d18be37fca93f09a050f5ca31bcc4752a5ecb090449090c48 matches=true (not overwritten)
+uninstall_done=2026-10-23T16:31:31+08:00

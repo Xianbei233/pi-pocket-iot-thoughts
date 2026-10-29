@@ -179,7 +179,7 @@ test(
         for (const entry of listing) {
             assert.match(
                 entry,
-                /^package\/(?:package\.json|iot-thoughts\.ts|manifest\.json|config\.example\.json|README\.md|LICENSE|PROVENANCE\.md|docs\/[\w.-]+\.md|scripts\/[\w.-]+\.mjs)$/,
+                /^package\/(?:package\.json|iot-thoughts\.ts|manifest\.json|config\.example\.json|README\.md|LICENSE|PROVENANCE\.md|iot-thoughts\/(?:index\.js|style\.css)|docs\/[\w.-]+\.md|scripts\/[\w.-]+\.mjs)$/,
             );
             assert.ok(!entry.includes(".."));
         }
@@ -198,6 +198,15 @@ test(
         const extensions = join(data, "extensions");
         mkdirSync(extensions, { recursive: true });
         writeFileSync(join(extensions, file), packedSource);
+        for (const clientFile of ["index.js", "style.css"]) {
+            const packedClient = execFileSync(
+                "tar",
+                ["-xOzf", tarball, `package/iot-thoughts/${clientFile}`],
+                { timeout: 10000 },
+            );
+            mkdirSync(join(extensions, "iot-thoughts"), { recursive: true });
+            writeFileSync(join(extensions, "iot-thoughts", clientFile), packedClient);
+        }
         app = await openApp(model, data);
         const isolatedApp = app;
         const listingBefore = await app.extensions(owner(app));

@@ -1,0 +1,17 @@
+
+> pi-pocket-iot-thoughts@0.1.0 check
+> tsc -p tsconfig.json
+
+iot-thoughts.ts(736,9): error TS2322: Type '(args: { profile?: "compact" | "balanced" | "full" | undefined; text: string; }, _api: ToolExecutionApi<JsonValue>, context: Context) => Promise<...>' is not assignable to type '(args: { profile?: "compact" | "balanced" | "full" | undefined; text: string; }, api: ToolExecutionApi<JsonValue>, context: Context) => Promise<...>'.
+  Type 'Promise<{ content: { type: "text"; text: string; }[]; }>' is not assignable to type 'Promise<ToolExecutionResult<JsonValue>>'.
+    Type '{ content: { type: "text"; text: string; }[]; }' has no properties in common with type 'ToolExecutionResult<JsonValue>'.
+test/factory.test.ts(61,32): error TS2339: Property 'content' does not exist on type 'ToolExecutionResult<JsonValue>'.
+test/factory.test.ts(62,25): error TS2339: Property 'content' does not exist on type 'ToolExecutionResult<JsonValue>'.
+test/factory.test.ts(63,18): error TS7006: Parameter 'part' implicitly has an 'any' type.
+test/factory.test.ts(64,15): error TS7006: Parameter 'part' implicitly has an 'any' type.
+test/factory.test.ts(81,36): error TS2339: Property 'content' does not exist on type 'ToolExecutionResult<JsonValue>'.
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

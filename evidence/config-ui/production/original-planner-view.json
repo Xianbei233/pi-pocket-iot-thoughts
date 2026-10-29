@@ -1,0 +1,85 @@
+{
+  "attribution": "Planner-supplied authenticated official GET; not a tester browser/API observation",
+  "reload": {
+    "http": 200,
+    "at": "2026-10-23T14:29:52.874Z",
+    "modules": 30,
+    "enabled": 27,
+    "errors": 0,
+    "iotEnabled": true,
+    "readOnlyTool": "iot_thoughts_compact",
+    "routes": [
+      "GET config",
+      "POST config",
+      "POST reset"
+    ],
+    "clientAccess": "owner",
+    "changedOtherModules": []
+  },
+  "originalGet": {
+    "http": 200,
+    "at": "2026-10-23T14:29:52.882Z",
+    "view": {
+      "schemaVersion": 1,
+      "stored": {
+        "enabled": true,
+        "profile": "full",
+        "minChars": 400,
+        "maxInputChars": 24000,
+        "maxNodes": 8,
+        "maxOutputChars": 8000,
+        "timeoutMs": 1000
+      },
+      "effective": {
+        "enabled": true,
+        "profile": "full",
+        "minChars": 400,
+        "maxInputChars": 24000,
+        "maxNodes": 8,
+        "maxOutputChars": 8000,
+        "timeoutMs": 1000
+      },
+      "defaults": {
+        "enabled": true,
+        "profile": "full",
+        "minChars": 400,
+        "maxInputChars": 24000,
+        "maxNodes": 8,
+        "maxOutputChars": 8000,
+        "timeoutMs": 1000
+      },
+      "environmentOverrides": {},
+      "sources": {
+        "enabled": "default",
+        "profile": "default",
+        "minChars": "default",
+        "maxInputChars": "default",
+        "maxNodes": "default",
+        "maxOutputChars": "default",
+        "timeoutMs": "default"
+      },
+      "revision": "4698def6de5c6b3d51db2e8044d5ae531e7df2ea99d4703b117de261123005d3",
+      "runtime": {
+        "hotApply": true,
+        "moduleLoaded": true,
+        "algorithmEnabled": true
+      }
+    },
+    "ownConfigDirectoryInitiallyAbsent": true,
+    "noAutoSeed": true
+  },
+  "packageSha256": "a4b1fe83dc95e6572b8aa40e94f8dc7cea4c96ced5dec66f4f60435862accfb3",
+  "productionBackup": {
+    "directoryAsSupplied": "Backup/private-iot-config-ui-20261023-222820",
+    "directoryMode": "0700",
+    "configReferenceMode": "0600",
+    "attribution": "path supplied as Backup/private-iot-config-ui-20261023-222820; exact absolute backup location not independently verified"
+  },
+  "pendingCalls": [
+    "disabled",
+    "compact",
+    "restored-exact"
+  ],
+  "callsPerformed": 0,
+  "finalPolicy": "keep module enabled; restore original effective defaults via planner UI; persisted defaults file may remain"
+}

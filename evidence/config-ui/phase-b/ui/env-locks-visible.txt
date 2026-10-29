@@ -1,0 +1,91 @@
+{
+  "view": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {
+      "enabled": false,
+      "profile": "balanced",
+      "maxNodes": 2
+    },
+    "sources": {
+      "enabled": "env",
+      "profile": "env",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "env",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "8e04c064cbc0bcdc3f969b96aaea4001080bb976d11239c4778117b3f2045599",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": false,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  },
+  "switchDisabled": null,
+  "switchElement": "<button type=\"button\" role=\"switch\" aria-checked=\"true\" aria-label=\"启用整理算法 / Enable extraction\" class=\"switch on\" disabled=\"\"><span></span></button>",
+  "profileDisabled": true,
+  "maxNodesDisabled": true,
+  "text": "IoT 配置 / IoT settings\niot-thoughts\nIoT 配置 / IoT settings\n\n抽取算法保持确定性、离线。这里只调整该工具的运行上限；插件开关仍在 Menu → Extensions。 / Extraction is deterministic and offline. This page changes limits only; the plugin switch stays in Menu → Extensions.\n\n模块已加载 / module loaded\n算法执行 / algorithm off\n热应用 / hot apply\n\n启用整理算法 / Enable extraction\n\n关闭后工具返回 kept，不改写原文。运行中的其他功能不变。 / When off, the tool keeps the original text unchanged; other running features stay as they are.\n\n环境变量已锁定此项 / env locked：保存值 / storedtrue，生效值 / effectivefalse。GUI 不能改进程环境 / cannot edit the process environment.\n\nProfile\n\ncompact 节点更少，balanced 中等，full 上限最高。 / compact keeps fewer nodes, balanced is middle, full has the highest ceiling.\n\ncompact\nbalanced\nfull\n\n环境变量已锁定 / env locked：保存值 / stored compact，生效值 / effective balanced。\n\n最小字符数 / Minimum characters\n\n短于此值的输入保留原文。单位：UTF-16 单元。范围 0–64000。 Inputs shorter than this stay unchanged; UTF-16 units, 0–64000.来源：已保存 / saved\n\n保存值 / stored 400，生效值 / effective 400。\n\n最大输入字符数 / Maximum input characters\n\n超过即拒绝，不截断。单位：UTF-16 单元。范围 100–64000。 Larger input is rejected, not truncated; UTF-16 units, 100–64000.来源：已保存 / saved\n\n保存值 / stored 24000，生效值 / effective 24000。\n\n最大节点数 / Maximum nodes\n\n一次整理最多返回的节点数。范围 1–16。 Maximum nodes returned by one extraction; 1–16.来源：环境锁定 / env\n\n环境锁定 / env locked：保存值 / stored 3，生效值 / effective 2。\n\n最大输出字符数 / Maximum output characters\n\n压缩结果的字符上限，且不得大于最大输入字符数。单位：UTF-16 单元。 Output limit, at most the input limit; UTF-16 units.来源：已保存 / saved\n\n保存值 / stored 8000，生效值 / effective 8000。\n\n超时 / Timeout\n\n一次整理的时间上限。单位：毫秒。范围 10–5000。 Time limit for one extraction; milliseconds, 10–5000.来源：已保存 / saved\n\n保存值 / stored 1000，生效值 / effective 1000。\n\n保存 / Save\n刷新 / Refresh\n恢复保存的默认值 / Reset saved defaults\n\n只会写回默认保存值；环境变量仍然优先。 / Writes the saved defaults only; environment overrides still win. It does not unload the module or change Pocket settings.\n\n恢复默认值 / Reset…\n\n生效顺序 / precedence：默认值 / defaults < 保存值 / saved < 环境变量 / env。保存写入 Pocket 数据目录下的模块私有配置文件；保存后无需重启，下一次工具调用使用新值。 / Saves to the module's own config file and applies to the next tool call without a restart. 字符数是 UTF-16 单元，不是 token / UTF-16 units, not tokens. 插件开关和卸载在 Menu → Extensions / plugin switch and removal stay there. revision 8e04c064cbc0…"
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · mobile 390×844

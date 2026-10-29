@@ -1,0 +1,34 @@
+{
+  "scope": "independent isolated exact candidate",
+  "candidateSha256": "db5d2685cb77b070add5351f721ed02c56bcfa7c476ad5b34d7021f965e3a6db",
+  "origin": "http://127.0.0.2:32913",
+  "desktop": {
+    "viewport": "1280x800",
+    "navigation": "Clicked visible IoT 配置 / IoT settings button from the normal homepage",
+    "pageFailure": "Failed to execute 'insertBefore' on 'Node': parameter 1 is not of type 'Node'.",
+    "numericOrSelectOrSwitchControls": 0,
+    "horizontalOverflow": false
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "navigation": "Closed failed page to the normal mobile home, then clicked visible IoT 配置 / IoT settings button",
+    "pageFailure": "Failed to execute 'insertBefore' on 'Node': parameter 1 is not of type 'Node'.",
+    "numericOrSelectOrSwitchControls": 0,
+    "horizontalOverflow": false
+  },
+  "console": "IoT settings failed TypeError at extension-ui.js:2259",
+  "screenshot": {
+    "desktopObservedInBrowserTool": true,
+    "filesystemPngPath": null
+  },
+  "workflowBlocked": [
+    "visible save",
+    "page refresh persistence",
+    "invalid UI validation",
+    "reset confirmation/cancel",
+    "env-lock readback",
+    "Switch behavior",
+    "English fallback"
+  ],
+  "productionBrowserUsed": false
+}

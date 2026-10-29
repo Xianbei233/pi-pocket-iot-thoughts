@@ -1,0 +1,35 @@
+{
+  "status": "compacted",
+  "reason": "compacted",
+  "profile": "compact",
+  "charsIn": 1143,
+  "charsOut": 119,
+  "omitted": 24,
+  "verified": false,
+  "tags": "heuristic",
+  "offsets": "utf16",
+  "nodes": [
+    {
+      "tag": "support",
+      "text": "A useful local prototype.",
+      "start": 9,
+      "end": 34,
+      "sourceTag": "Support"
+    },
+    {
+      "tag": "plan",
+      "text": "Run local tests tomorrow.",
+      "start": 41,
+      "end": 66,
+      "sourceTag": "Plan"
+    },
+    {
+      "tag": "tradeoff",
+      "text": "Shorter display has less context.",
+      "start": 77,
+      "end": 110,
+      "sourceTag": "Tradeoff"
+    }
+  ],
+  "text": "- [support] A useful local prototype.\n- [plan] Run local tests tomorrow.\n- [tradeoff] Shorter display has less context."
+}

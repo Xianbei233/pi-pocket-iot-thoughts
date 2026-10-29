@@ -1,0 +1,4 @@
+  File "<stdin>", line 4
+    imports='import { createHash } from "node:crypto";
+            ^
+SyntaxError: unterminated string literal (detected at line 4)

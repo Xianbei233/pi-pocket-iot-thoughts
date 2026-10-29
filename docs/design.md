@@ -50,7 +50,7 @@
 以下必须保留，不能被预算静默丢弃：
 
 - 标签为 `decision`、`risk`、`open`、`oppose` 的节点；
-- 含否定词（不/没/无/未/勿/别/禁/避免/不能/不应/不可/拒绝/反对，及常见英文否定）的节点。
+- 含否定词（不/没/无/未/勿/别/禁/避免/不能/不应/不可/拒绝/反对，及常见英文否定）的节点。唯一词法例外：`无害` 中的“无”不算否定；同句其他否定（如 `未经`、`不得`、`无法`、`没有`）仍算。
 
 若关键节点数超过有效节点上限，或关键节点渲染后超过 `maxOutputChars`，结果为 `kept` / `node-budget-insufficient`，原文完整返回。**不会**为了凑预算删掉风险、待定或否定。
 
@@ -85,6 +85,19 @@
 - 输入先过硬上限 64000 与配置 `maxInputChars`，再判断 `enabled`：超限抛 `iot-thoughts: input too large`，不回显。禁用状态也不回显超限原文。
 - `options` 若是对象，只允许普通的 `profile` 数据属性；数组、`null`、访问器、symbol、未知字段（如 `root`/`path`/`role`）都抛 `iot-thoughts: invalid options`。
 - 有效 profile = `options.profile ?? config.profile`；工具结果的 `profile` 报告实际生效值。
+
+## 设置存储与热应用
+
+- 固定路径 `<host.dataDir>/x.iot-thoughts/config.json`；不接受 path/root/user/role 参数。目录 `0700`、文件 `0600`。
+- 读取使用 `O_NOFOLLOW`，拒绝符号链接、非普通文件、`nlink != 1`、设备文件和超过 8192 bytes 的文件；读取比对 lstat 与打开后 fstat 的 inode/device。缺失时使用默认值，不自动创建文件。
+- 写入串行化：先在固定 `config.lock` 上取得跨版本/跨 factory 准入，再在锁内重读磁盘 revision → 写唯一临时文件（`O_CREAT|O_EXCL|O_NOFOLLOW`）→ `fsync` → `rename`。**提交点是 `rename` 成功**；之后不再报“保存失败”。提交前取消只删除本次临时文件，内存生效值不变。
+- 锁文件超过 1.5 秒仍被占用时返回 `409 busy`；不删除无法确认归属的锁。释放前核对 inode/device。
+- GET 和每次工具调用在读之前刷新自己的文件；外部版本提交后不会继续提供陈旧值，工具仍只在自己的调用开始时取一次快照。
+- 加载时同时校验保存值和与 env 合并后的生效值；POST 也校验两者。坏存储文件或无效 env 使模块 fail closed 且保留原文件。
+- 请求体先按数据描述符复制，拒绝 accessor/symbol/非普通原型/数组/toJSON，再计算 8 KB 上限；请求 handler 只读安全副本。
+- 优先级：默认值 < 保存值 < env 显式键。`sources` 逐字段给出 `default` / `saved` / `env`；env 锁定的字段只展示存储值与生效值，GUI 不修改环境。
+- 工具在每次 `execute` 开始时取一次 `state.effective` 快照；保存提交后替换快照，因此下一次调用生效，运行中的调用不变。
+- 模块 factory 为 `async`：在返回 extension 前读取并校验自己的文件；`web.onDispose` abort 生命周期信号，队列中的写入在提交前取消。
 
 ## 取消与超时
 

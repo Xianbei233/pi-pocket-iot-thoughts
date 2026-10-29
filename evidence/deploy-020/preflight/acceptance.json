@@ -1,0 +1,41 @@
+{
+  "phase": "A",
+  "status": "PASS",
+  "scope": "isolated Pocket 0.20 preflight only",
+  "pocket": {
+    "version": "0.20.0",
+    "head": "d1b97e1d995742dae90b20bcd1ce9545fdfc58c5",
+    "clean": true,
+    "extensionApi": 2,
+    "piAi": "1.3.0",
+    "piDurable": "1.3.0"
+  },
+  "candidateSha256": "31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e",
+  "sourceSha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+  "manifestSha256": "1525899983a0c210f421e4e81ea1a9b06e268cb85afbba816c1465f7edca0fca",
+  "fullSuite": {
+    "exit": 0,
+    "total": 56,
+    "original": 45,
+    "regressions": 11
+  },
+  "typeCheck": {
+    "exit": 0,
+    "osBoundSeconds": 45,
+    "ranAlone": true,
+    "attempts": 1
+  },
+  "allOtherGateExits": 0,
+  "exactFixture": {
+    "runs": 2,
+    "strictPass": true,
+    "byteIdentical": true,
+    "rawSha256": "e8592a9a8c028d413fb21c22528dddcd4a120090e2cce47ed11fb3ba2b7df3b2"
+  },
+  "dictionaryHashUnchanged": true,
+  "workingFilesUnchanged": true,
+  "productionMutation": false,
+  "liveAcceptance": "not performed in this phase",
+  "latestFinalStatePolicy": "Leave installed and enabled after separately authorized live PASS",
+  "usage": "not obtained"
+}

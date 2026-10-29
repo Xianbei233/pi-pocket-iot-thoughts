@@ -1,0 +1,2 @@
+4b6673a00ad9b1c79f265f4565c8bed6e11cdb23996f896b687cfe774c1d8fdd  iot-thoughts.ts
+81d214458a2661ac541e74ef97752c2571715bc503caa74c7b8aa609f11b3689  /home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/deploy-019/preflight/integration/artifacts/pi-pocket-iot-thoughts-0.1.0.tgz

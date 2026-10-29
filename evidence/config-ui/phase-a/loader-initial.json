@@ -1,0 +1,12 @@
+[
+  {
+    "file": "iot-thoughts.ts",
+    "title": "iot-thoughts",
+    "source": "drop-in",
+    "summary": "IoT (Items of Thoughts) notes for Pi Pocket: a read-only extraction tool, plus an owner-only settings page.",
+    "enabled": false,
+    "required": false,
+    "extensions": [],
+    "path": "/tmp/pi-pocket-test-EX2fMs/iot-exact-repro-data/extensions/iot-thoughts.ts"
+  }
+]

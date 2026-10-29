@@ -1,0 +1,70 @@
+{
+  "status": "compacted",
+  "reason": "compacted",
+  "profile": "full",
+  "charsIn": 684,
+  "charsOut": 235,
+  "omitted": 22,
+  "verified": false,
+  "tags": "heuristic",
+  "offsets": "utf16",
+  "nodes": [
+    {
+      "tag": "oppose",
+      "text": "不向外部服务发送这批合成笔记内容。",
+      "start": 28,
+      "end": 45,
+      "sourceTag": "反对"
+    },
+    {
+      "tag": "tradeoff",
+      "text": "更短展示与保留全部措辞之间需要取舍。",
+      "start": 50,
+      "end": 68,
+      "sourceTag": "权衡"
+    },
+    {
+      "tag": "open",
+      "text": "是否增加更多展示选项仍然等待确认。",
+      "start": 73,
+      "end": 90,
+      "sourceTag": "待定"
+    },
+    {
+      "tag": "plan",
+      "text": "下一步由人工检查每个原文定位范围。",
+      "start": 95,
+      "end": 112,
+      "sourceTag": "计划"
+    },
+    {
+      "tag": "decision",
+      "text": "本次保留原有模型设置和扩展权限。",
+      "start": 117,
+      "end": 133,
+      "sourceTag": "决定"
+    },
+    {
+      "tag": "risk",
+      "text": "标签仅靠词法可能错误归类普通语句。",
+      "start": 138,
+      "end": 155,
+      "sourceTag": "风险"
+    },
+    {
+      "tag": "neutral",
+      "text": "这些文字只用于本次无害上线验收。",
+      "start": 160,
+      "end": 176,
+      "sourceTag": "中性"
+    },
+    {
+      "tag": "neutral",
+      "text": "普通背景说明仅用于构造可重复的无害验收文本。",
+      "start": 178,
+      "end": 200,
+      "sourceTag": null
+    }
+  ],
+  "text": "- [oppose] 不向外部服务发送这批合成笔记内容。\n- [tradeoff] 更短展示与保留全部措辞之间需要取舍。\n- [open] 是否增加更多展示选项仍然等待确认。\n- [plan] 下一步由人工检查每个原文定位范围。\n- [decision] 本次保留原有模型设置和扩展权限。\n- [risk] 标签仅靠词法可能错误归类普通语句。\n- [neutral] 这些文字只用于本次无害上线验收。\n- [neutral] 普通背景说明仅用于构造可重复的无害验收文本。"
+}

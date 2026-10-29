@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-23T14:07:20.537Z",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scrollWidth": 390,
+  "clientWidth": 390,
+  "numeric": [],
+  "switches": [],
+  "selects": [],
+  "text": "π\nOW\nSessions\n1\nNew\nRecent\nFolders\nArchived\nToday\n1\nOrganize synthetic notes using current configuration\n2m"
+}
+Page: "Pi Pocket" · http://127.0.0.2:44935/ · mobile 390×844

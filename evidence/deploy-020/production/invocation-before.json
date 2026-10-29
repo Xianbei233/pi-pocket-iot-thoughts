@@ -1,0 +1,39 @@
+{
+  "startedAt": "2026-10-23T12:04:03.109Z",
+  "authorizedOneCall": true,
+  "finalStatePolicy": "LEAVE INSTALLED AND ENABLED on PASS",
+  "pocket": {
+    "version": "0.20.0",
+    "head": "d1b97e1d995742dae90b20bcd1ce9545fdfc58c5",
+    "sdk": "1.3.0",
+    "api": 2
+  },
+  "candidateSha256": "31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e",
+  "sourceSha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+  "expectedRequestSha256": "eaaf9735e58cd8c007f42da892b2ba391795e1b752def522d5fb8d68695b6c2e",
+  "plannerSuppliedLifecycle": {
+    "enableAt": "2026-10-23T12:02:35.067Z",
+    "reloadAt": "2026-10-23T12:02:35.110Z",
+    "enableHttp": 200,
+    "reloadHttp": 200,
+    "modules": 29,
+    "enabledModules": 26,
+    "errors": 0,
+    "iotEnabled": true,
+    "registeredReadOnlyTool": "iot_thoughts_compact",
+    "changedOtherModules": [],
+    "installedInode": 5697273,
+    "baseline": {
+      "modules": 28,
+      "enabled": 25,
+      "errors": 0
+    },
+    "dictionarySha256": "15a0ceb363d92c7d0fc2b75c89a13f88e101285aa417db85039857aeda8e965e"
+  },
+  "callCount": 0,
+  "status": "not started",
+  "toolSucceeded": false,
+  "rawDurable": false,
+  "errors": [],
+  "paidProviderProbes": 0
+}

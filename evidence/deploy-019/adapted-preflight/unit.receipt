@@ -1,0 +1,5 @@
+start=2026-10-23T15:40:32+08:00
+end=2026-10-23T15:40:33+08:00
+boundSeconds=45
+exit=0
+command=node --test test/core.test.ts test/regressions.test.ts test/factory.test.ts

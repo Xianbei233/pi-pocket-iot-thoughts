@@ -1,0 +1,99 @@
+{
+  "attribution": "Planner-supplied official API and authenticated browser evidence; not independent tester UI",
+  "enable": {
+    "at": "2026-10-23T08:27:44.959Z",
+    "http": 200,
+    "modules": 28,
+    "enabled": 26,
+    "errors": 0,
+    "iotEnabled": true,
+    "exposedTool": "iot_thoughts_compact",
+    "changedOtherModules": []
+  },
+  "desktop": {
+    "at": "2026-10-23T08:28:59.340Z",
+    "page": "http://127.0.0.1:8788/home",
+    "authenticated": true,
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "scrollWidth": 1280,
+    "clientWidth": 1280,
+    "horizontalOverflow": false,
+    "getExtensions": {
+      "http": 200,
+      "modules": 28,
+      "enabled": 26,
+      "errors": 0,
+      "iotEnabled": true,
+      "iotError": null
+    },
+    "windowErrors": [],
+    "rejections": [],
+    "console": "empty"
+  },
+  "mobile": {
+    "at": "2026-10-23T08:29:36.519Z",
+    "authenticated": true,
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "clientWidth": 390,
+    "horizontalOverflow": false,
+    "getExtensions": {
+      "http": 200,
+      "modules": 28,
+      "enabled": 26,
+      "errors": 0,
+      "iotEnabled": true,
+      "iotError": null
+    },
+    "windowErrors": [],
+    "rejections": [],
+    "console": "empty"
+  },
+  "uiScope": "Homepage while plugin enabled only. Node-output UI not independently rendered.",
+  "screenshots": {
+    "observedInPlannerBrowserTool": true,
+    "archivedPng": false,
+    "filesystemPaths": null
+  },
+  "disable": {
+    "at": "2026-10-23T08:31:00.310Z",
+    "http": 200,
+    "modules": 28,
+    "enabled": 25,
+    "errors": 0,
+    "iotEnabled": false,
+    "extensions": [],
+    "changedOtherModules": []
+  },
+  "finalGet": {
+    "at": "2026-10-23T08:32:33.509Z",
+    "http": 200,
+    "pocket": "0.19.0",
+    "modules": 27,
+    "enabled": 25,
+    "errors": 0,
+    "iotAbsent": true,
+    "changedExistingModules": [],
+    "addedModules": [],
+    "guardUnchanged": true
+  },
+  "finalState": "UNINSTALLED and disabled by Owner-required successful planned cleanup",
+  "configuration": {
+    "liveSha256": "cdd86518e826573d18be37fca93f09a050f5ca31bcc4752a5ecb090449090c48",
+    "matchesNewBackup": true,
+    "directlyOverwritten": false,
+    "newResidue": false
+  },
+  "backup": {
+    "directory": "/home/xianbei233/Work/pi-pocket-iot-thoughts-deploy-private-20261023-162653",
+    "directoryMode": "0700",
+    "configMode": "0600",
+    "retained": true
+  }
+}

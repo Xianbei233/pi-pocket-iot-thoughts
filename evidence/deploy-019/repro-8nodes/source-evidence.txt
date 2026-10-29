@@ -1,0 +1,178 @@
+74: const NEGATION =
+75:     /(?:不|没|无|未|勿|别|禁|避免|不能|不应|不可|拒绝|反对)|\b(?:not|no|never|without|avoid|cannot|can't|don't|doesn't|didn't|reject|oppose)\b/i;
+137: const TAG_RANK: Readonly<Record<Tag, number>> = Object.freeze({
+138:     decision: 0,
+139:     risk: 0,
+140:     open: 0,
+141:     oppose: 0,
+142:     tradeoff: 1,
+143:     plan: 1,
+144:     support: 2,
+145:     neutral: 3,
+146: });
+147: 
+148: const PROFILE_NODES: Readonly<Record<Profile, number>> = Object.freeze({ compact: 4, balanced: 6, full: 16 });
+149: const PROFILE_TAG_CAP: Readonly<Record<Profile, number>> = Object.freeze({
+150:     compact: 1,
+151:     balanced: 2,
+152:     full: 3,
+153: });
+162: export const DEFAULT_CONFIG: Readonly<Config> = Object.freeze({
+163:     enabled: true,
+164:     profile: "full" as const,
+165:     minChars: 400,
+166:     maxInputChars: 24000,
+167:     maxNodes: 8,
+168:     maxOutputChars: 8000,
+169:     timeoutMs: 1000,
+170: });
+408: function isCritical(tag: Tag, text: string): boolean {
+409:     return tag === "decision" || tag === "risk" || tag === "open" || tag === "oppose" || NEGATION.test(text);
+410: }
+411: 
+412: /** Make one unit from `text[start, start + length)`, excluding an explicit label from the node's offsets. */
+413: function makeUnit(source: string, start: number, text: string): DraftUnit | null {
+414:     if (text === "") {
+415:         return null;
+416:     }
+417:     const match = EXPLICIT_TAG.exec(text);
+418:     if (match !== null) {
+419:         const word = match[1] ?? match[2];
+420:         const tag = word === undefined ? undefined : TAG_WORDS[word.toLowerCase()];
+421:         if (tag !== undefined) {
+422:             const restRaw = text.slice(match[0].length);
+423:             const lead = restRaw.length - restRaw.trimStart().length;
+424:             const rest = restRaw.trim();
+425:             if (rest !== "") {
+426:                 const nodeStart = start + match[0].length + lead;
+427:                 return {
+428:                     start: nodeStart,
+429:                     end: nodeStart + rest.length,
+430:                     text: rest,
+431:                     tag,
+432:                     sourceTag: word ?? null,
+433:                     critical: isCritical(tag, rest),
+434:                 };
+435:             }
+436:         }
+437:     }
+438:     const tag = inferTag(text);
+439:     return { start, end: start + text.length, text, tag, sourceTag: null, critical: isCritical(tag, text) };
+440: }
+479:     const seen = new Set<string>();
+480:     const kept: DraftUnit[] = [];
+481:     for (const unit of units) {
+482:         // The label is part of the identity: a supported and an opposed sentence with the same wording are not
+483:         // duplicates, and dropping the later one would silently lose a critical voice.
+484:         const key = `${unit.tag}\u0000${normaliseKey(unit.text)}`;
+485:         if (seen.has(key)) {
+486:             continue;
+487:         }
+488:         seen.add(key);
+489:         if (
+490:             !unit.critical &&
+491:             unit.sourceTag === null &&
+492:             key.length <= 14 &&
+493:             FILLERS.has(normaliseKey(unit.text).toLowerCase())
+494:         ) {
+495:             continue;
+496:         }
+497:         kept.push(unit);
+498:     }
+499:     return kept;
+500: }
+501: 
+502: function renderLine(node: Pick<NoteNode, "tag" | "text">): string {
+503:     return `- [${node.tag}] ${node.text}`;
+504: }
+505: 
+506: function renderLines(units: readonly DraftUnit[]): string {
+507:     return units.map(renderLine).join("\n");
+508: }
+509: 
+510: function kept(reason: string, text: string, charsIn: number): CompactResult {
+511:     return Object.freeze({
+512:         status: "kept" as const,
+513:         reason,
+514:         text,
+515:         nodes: Object.freeze([]) as readonly NoteNode[],
+516:         charsIn,
+517:         charsOut: text.length,
+518:         omitted: 0,
+519:         verified: false as const,
+520:     });
+610:     const maxNodes = Math.min(cfg.maxNodes, PROFILE_NODES[profile]);
+611:     const tagCap = PROFILE_TAG_CAP[profile];
+612:     const critical = candidates.filter((unit) => unit.critical);
+613:     if (critical.length > maxNodes) {
+614:         return kept("node-budget-insufficient", text, charsIn);
+615:     }
+616:     if (renderLines(critical).length > cfg.maxOutputChars) {
+617:         return kept("node-budget-insufficient", text, charsIn);
+618:     }
+619: 
+620:     const selected: DraftUnit[] = [...critical];
+621:     const tagCounts = new Map<Tag, number>();
+622:     for (const unit of critical) {
+623:         tagCounts.set(unit.tag, (tagCounts.get(unit.tag) ?? 0) + 1);
+624:     }
+625: 
+626:     const rest = candidates
+627:         .filter((unit) => !unit.critical)
+628:         .sort((a, b) => TAG_RANK[a.tag] - TAG_RANK[b.tag] || a.start - b.start);
+629: 
+630:     for (const unit of rest) {
+631:         if (selected.length >= maxNodes) {
+632:             break;
+633:         }
+634:         checkStopped(signal, deadline);
+635:         if (yields < 4) {
+636:             await yieldCheckpoint(signal, deadline);
+637:             yields += 1;
+638:         }
+639:         if ((tagCounts.get(unit.tag) ?? 0) >= tagCap) {
+640:             continue;
+641:         }
+642:         const candidate = [...selected, unit].sort((a, b) => a.start - b.start);
+643:         if (renderLines(candidate).length > cfg.maxOutputChars) {
+644:             continue;
+645:         }
+646:         selected.push(unit);
+647:         tagCounts.set(unit.tag, (tagCounts.get(unit.tag) ?? 0) + 1);
+648:     }
+649: 
+650:     selected.sort((a, b) => a.start - b.start);
+651:     if (selected.length === 0) {
+652:         return kept("insufficient-structure", text, charsIn);
+653:     }
+654: 
+655:     const nodes: NoteNode[] = selected.map((unit) =>
+656:         Object.freeze({
+657:             tag: unit.tag,
+658:             text: unit.text,
+659:             start: unit.start,
+660:             end: unit.end,
+661:             sourceTag: unit.sourceTag,
+662:         }),
+663:     );
+664:     for (const node of nodes) {
+665:         if (text.slice(node.start, node.end) !== node.text) {
+666:             return kept("source-mismatch", text, charsIn);
+667:         }
+668:     }
+669: 
+670:     const rendered = nodes.map(renderLine).join("\n");
+671:     if (rendered.length >= trimmed.length) {
+672:         return kept("no-reduction", text, charsIn);
+673:     }
+674:     checkStopped(signal, deadline);
+675: 
+676:     return Object.freeze({
+677:         status: "compacted" as const,
+678:         reason: "compacted",
+679:         text: rendered,
+680:         nodes: Object.freeze(nodes) as readonly NoteNode[],
+681:         charsIn,
+682:         charsOut: rendered.length,
+683:         omitted: units.length - nodes.length,
+684:         verified: false as const,

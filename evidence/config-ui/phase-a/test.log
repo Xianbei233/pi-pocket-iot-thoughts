@@ -1,0 +1,179 @@
+
+> pi-pocket-iot-thoughts@0.2.0 test
+> node --test test/*.test.ts
+
+✔ real Pocket owner-only config routes, persisted hot apply and restart use actual native faux (1310.106807ms)
+✔ config defaults do not seed own files; routes/client explicitly owner-only (39.803686ms)
+✔ save persists atomically with restrictive modes, hot apply, reset confirmation and reload (42.160145ms)
+✔ in-flight tool uses call-start snapshot; later call uses saved profile and node cap (24.756783ms)
+✔ strict full-settings rejection preserves state and disk: unknown (6.082303ms)
+✔ strict full-settings rejection preserves state and disk: missing (3.748892ms)
+✔ strict full-settings rejection preserves state and disk: fraction (2.500891ms)
+✔ strict full-settings rejection preserves state and disk: negative (1.665235ms)
+✔ strict full-settings rejection preserves state and disk: profile (1.98078ms)
+✔ strict full-settings rejection preserves state and disk: cross minimum (4.375162ms)
+✔ strict full-settings rejection preserves state and disk: cross output (3.059765ms)
+✔ strict full-settings rejection preserves state and disk: array (2.060959ms)
+✔ strict full-settings rejection preserves state and disk: null (1.642188ms)
+✔ strict full-settings rejection preserves state and disk: inherited (2.340954ms)
+✔ strict full-settings rejection preserves state and disk: accessor (1.428752ms)
+✖ top-level getters/prototypes, unknown body fields and oversized body reject without executing accessors (5.639367ms)
+✔ owner check rejects direct guest/viewer requests and reset cannot bypass it (5.024831ms)
+✔ stale and concurrent revisions yield a single winner and preserve committed bytes (6.303143ms)
+✔ external disk revision conflict leaves hot snapshot and external file unchanged (3.815382ms)
+✔ explicit env keys override saved keys only; reset keeps env and merged bounds validate before write (7.419282ms)
+✔ invalid env fails closed without raw echo: "" (0.90005ms)
+✔ invalid env fails closed without raw echo: " " (0.314078ms)
+✔ invalid env fails closed without raw echo: "not-json-SYNTHETIC" (0.237462ms)
+✔ invalid env fails closed without raw echo: "[]" (0.211411ms)
+✔ invalid env fails closed without raw echo: "null" (0.612931ms)
+✔ invalid env fails closed without raw echo: "{\"unknown\":\"SYNTHETIC\"}" (0.375888ms)
+✔ unsafe existing own config fails closed: directory-link (4.462395ms)
+✔ unsafe existing own config fails closed: file-link (2.041333ms)
+✔ unsafe existing own config fails closed: hardlink (1.723343ms)
+✔ unsafe existing own config fails closed: fifo (9.117832ms)
+✔ unsafe existing own config fails closed: large (3.012482ms)
+✔ unsafe existing own config fails closed: malformed (5.176596ms)
+✔ aborted and unloaded saves preserve valid file and memory with no temporary residue (4.712429ms)
+✖ two factory versions sharing one directory cannot both commit the same revision (7.62804ms)
+✔ failed config-path precommit preserves valid hot snapshot and unrelated bytes (6.099065ms)
+✔ config defaults are exact and frozen (8.392038ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (2.299398ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (3.977275ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (32.868406ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (16.35364ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (20.485475ms)
+✔ empty/short/disabled and not-shorter preserve exact original (1.337957ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (4.244139ms)
+✔ fenced repeated code and factual tool output remain intact (0.935319ms)
+✔ pre-abort and active abort reject, do not return apparent success (3.201473ms)
+✔ concurrent calls cannot leak or reuse another input (4.491379ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (18.962228ms)
+✔ tool calls host defang and warns alongside untrusted result (7.87493ms)
+✔ factory config is read once and malformed env fails closed without echoing content (6.41419ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (8.423257ms)
+✔ caller abort cancels tool and does not retain listeners or timers (9.170842ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (80.021953ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (88.183164ms)
+✔ link script refuses regular-file node_modules without modifying external target (80.489823ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (97.785139ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (110.814315ms)
+✔ offline pack refuses unexpected iot-thoughts/private.txt instead of including prefix contents (103.5109ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (95.673056ms)
+✔ offline pack refuses symlink payload manifest.json (659.816502ms)
+✖ offline pack refuses symlink payload iot-thoughts/index.js (95.969185ms)
+✖ offline pack refuses symlink payload iot-thoughts/style.css (89.822977ms)
+✔ offline pack rejects a tampered source digest (73.660423ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (985.393311ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (1678.152321ms)
+✔ direct options reject unknown permissions (4.029587ms)
+✔ direct options reject array (0.767421ms)
+✔ direct options reject null (0.333285ms)
+✔ direct options reject inherited (0.249824ms)
+✔ direct options reject symbol key (0.467939ms)
+✔ input over configured max rejects even enabled=true (1.255544ms)
+✔ input over configured max rejects even enabled=false (0.716715ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (30.716235ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (111.202774ms)
+✔ identical text with opposing labels does not lose its negative semantics (4.919788ms)
+✔ conservative inference 尚未决定采用A。 (5.840511ms)
+✔ conservative inference 不支持采用A。 (6.721703ms)
+✔ conservative inference 计划采用A。 (5.370127ms)
+✔ unverified/verified-looking prose must never set verified true (2.10433ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (4.782339ms)
+✔ negative and undecided prose is conservatively labelled: We do not support option A. (6.862574ms)
+✔ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (3.978322ms)
+✔ negative and undecided prose is conservatively labelled: No decision has been made. (6.759139ms)
+✔ negative and undecided prose is conservatively labelled: 还未决定采用A。 (6.111567ms)
+✔ exact production request retains all eight grounded categories and emoji with default full profile (10.663359ms)
+✔ true negation remains critical under a one-node budget: 无备份。 (2.031346ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无备份。 (3.27816ms)
+✔ true negation remains critical under a one-node budget: 无权限。 (1.128851ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无权限。 (2.613336ms)
+✔ true negation remains critical under a one-node budget: 无法执行。 (2.724664ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无法执行。 (2.470161ms)
+✔ true negation remains critical under a one-node budget: 无批准。 (2.164883ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无批准。 (1.068229ms)
+✔ 无害 does not exempt a separate true negation: 无害样本不获批准。 (3.963725ms)
+✔ 无害 does not exempt a separate true negation: 无害样本仍无权限。 (4.071911ms)
+ℹ tests 94
+ℹ suites 0
+ℹ pass 90
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3528.76249
+
+✖ failing tests:
+
+test at test/config-settings.test.ts:164:1
+✖ top-level getters/prototypes, unknown body fields and oversized body reject without executing accessors (5.639367ms)
+  AssertionError [ERR_ASSERTION]: Missing expected rejection.
+      at async TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:183:13)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'rejects',
+    diff: 'simple'
+  }
+
+test at test/config-settings.test.ts:396:1
+✖ two factory versions sharing one directory cannot both commit the same revision (7.62804ms)
+  AssertionError [ERR_ASSERTION]: only one version can commit the original disk revision
+  
+  2 !== 1
+  
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/config-settings.test.ts:423:16)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at test/packaging.test.ts:116:5
+✖ offline pack refuses symlink payload iot-thoughts/index.js (95.969185ms)
+  Error: ENOENT: no such file or directory, open '/home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/config-ui/phase-a/test/pack-reject-symlink-iot-thoughts/index-js.log'
+      at writeFileSync (node:fs:3020:20)
+      at runScript (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/packaging.test.ts:54:5)
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/packaging.test.ts:124:28)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/config-ui/phase-a/test/pack-reject-symlink-iot-thoughts/index-js.log'
+  }
+
+test at test/packaging.test.ts:116:5
+✖ offline pack refuses symlink payload iot-thoughts/style.css (89.822977ms)
+  Error: ENOENT: no such file or directory, open '/home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/config-ui/phase-a/test/pack-reject-symlink-iot-thoughts/style-css.log'
+      at writeFileSync (node:fs:3020:20)
+      at runScript (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/packaging.test.ts:54:5)
+      at TestContext.<anonymous> (file:///home/xianbei233/Work/pi-pocket-iot-thoughts/test/packaging.test.ts:124:28)
+      at Test.runInAsyncScope (node:async_hooks:226:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/home/xianbei233/Work/pi-pocket-iot-thoughts/evidence/config-ui/phase-a/test/pack-reject-symlink-iot-thoughts/style-css.log'
+  }
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

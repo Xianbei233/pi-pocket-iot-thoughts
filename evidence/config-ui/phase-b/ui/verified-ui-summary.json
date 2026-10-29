@@ -1,0 +1,196 @@
+{
+  "desktop-disabled-save.txt": {
+    "stored": {
+      "enabled": false,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "\u6a21\u5757\u5df2\u52a0\u8f7d / module loaded\u7b97\u6cd5\u6267\u884c / algorithm off\u70ed\u5e94\u7528 / hot apply"
+  },
+  "mobile-compact-save-confirmed.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "\u6a21\u5757\u5df2\u52a0\u8f7d / module loaded\u7b97\u6cd5\u6267\u884c / algorithm on\u70ed\u5e94\u7528 / hot apply"
+  },
+  "mobile-page-persistence-confirmed.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "module-reload-readback.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "env-locks-visible.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": null
+  },
+  "env-reset-view.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": false,
+      "profile": "balanced",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 2,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "\u6a21\u5757\u5df2\u52a0\u8f7d / module loaded\u7b97\u6cd5\u6267\u884c / algorithm off\u70ed\u5e94\u7528 / hot apply"
+  },
+  "final-restored-view.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": null,
+    "status": "\u6a21\u5757\u5df2\u52a0\u8f7d / module loaded\u7b97\u6cd5\u6267\u884c / algorithm on\u70ed\u5e94\u7528 / hot apply"
+  },
+  "conflict-visible-refresh.txt": {
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 7,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "alert": "\u914d\u7f6e\u5df2\u5728\u5176\u4ed6\u6807\u7b7e\u9875\u66f4\u65b0\uff0c\u9875\u9762\u5df2\u5237\u65b0\uff0c\u8bf7\u91cd\u65b0\u4fdd\u5b58 / Changed in another tab; reloaded, save again",
+    "status": "\u6a21\u5757\u5df2\u52a0\u8f7d / module loaded\u7b97\u6cd5\u6267\u884c / algorithm on\u70ed\u5e94\u7528 / hot apply"
+  },
+  "tool-disabled-desktop.json": {
+    "status": "kept",
+    "reason": "disabled",
+    "profile": "full",
+    "nodes": 0
+  },
+  "tool-mobile-compact.json": {
+    "status": "compacted",
+    "reason": "compacted",
+    "profile": "compact",
+    "nodes": 3
+  },
+  "tool-restored-defaults.json": {
+    "status": "compacted",
+    "reason": "compacted",
+    "profile": "full",
+    "nodes": 4
+  }
+}

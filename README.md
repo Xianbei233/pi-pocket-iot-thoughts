@@ -1,10 +1,10 @@
 # pi-pocket-iot-thoughts
 
-Pi Pocket 的可选只读工具 **`iot_thoughts_compact`**：把用户**显式给出的可见笔记/取舍**整理成带标签和源定位的节点。
+Pi Pocket 的可选工具 **`iot_thoughts_compact`**：把用户**显式给出的可见笔记/取舍**整理成带标签和源定位的节点；并提供一个 **Owner-only 图形配置页**，把上限保存在自己的固定配置文件里，保存后下一次工具调用立即生效。
 
 IoT 指 **Items of Thoughts**。这是按公开行为规格做的独立重实现：主规划阅源核查，开发与测试不读、不复制上游源码或提示词。
 
-- **确定性、抽取式**：每个节点都是输入文本的精确子串；不调用模型、不联网、不做文件或进程 IO。
+- **确定性、抽取式**：每个节点都是输入文本的精确子串；工具本身不调用模型、不联网、不读写文件。模块只读写自己的固定配置文件，并只提供本页所述路由。
 - **不碰隐藏内容**：不拦截 stream、不读 reasoning/thinking、不改写历史或原工具调用。
 - **不冒充验证**：`verified` 永远为 `false`；标签是词法启发式，不是事实核验。
 - **输入永远是数据**：笔记里的任何指令都不会被执行；工具不接受 path/url/role/root/actor 等参数。
@@ -84,8 +84,8 @@ export function compactVisibleNotes(
     config?: Readonly<Config>,
     signal?: AbortSignal,
 ): Promise<CompactResult>;
-export default function createIotThoughts(host: Host, web: Web): Extension;
-export const pocketApi = 1;
+export default function createIotThoughts(host: Host, web: Web): Promise<Extension>;
+export const pocketApi = 2;
 ```
 
 不变式：对每个节点，`input.slice(start, end) === node.text`。若原文自带标签（如 `【风险】`、`[risk]`、`风险：`），`start` 跳过标签本身。
@@ -119,7 +119,10 @@ iot-thoughts: invalid config (unknown-field)
 - 只允许普通对象、已知字段、整数字段；拒绝数组、`null`、访问器属性、symbol 键、非普通原型和 proto 污染键。
 - 部署级 env 只有 `PI_POCKET_IOT_THOUGHTS_CONFIG`，值为 **JSON 对象字符串**。只有**未设置**时用默认值；空字符串、纯空白、超过 8192 字符或解析/校验失败都 **fail closed**，模块不加载。
 - `resolveConfig(undefined)` 返回默认值；`resolveConfig(null)` 报错。
-- 模块 factory 加载时解析一次；每个版本有独立配置与生命周期。工具参数、笔记内容都不能改变配置。
+- 模块 factory 加载时解析一次存储与 env；每个版本有独立配置与生命周期。工具参数、笔记内容都不能改变配置。
+- 存储值：`<host.dataDir>/x.iot-thoughts/config.json`（目录 `0700`，文件 `0600`），只由本模块读写；缺失时使用默认值且不自动创建，坏文件 fail closed 且保留。
+- 优先级：**默认值 < 保存值 < 显式 env 键**。env 只会锁定它明确给出的字段，不会把未给出的默认值当成覆盖。
+- GUI 保存后写入存储、并立即更新本进程内的生效值；下一次工具调用使用新值，无需重启。env 锁定的字段在 GUI 中显示保存值与生效值，但 GUI 不能改进程环境。
 - 该 env 由 Pocket 服务进程在启动时继承；在别的 shell `export` 不会改变运行中的进程，保存文件 reload 也只读现有 `process.env`。改变部署值需用新环境启动/重启隔离 Pocket（详见 `docs/install.md`）。
 
 示例见 [`config.example.json`](config.example.json)。
@@ -170,9 +173,25 @@ Profile 只能**收紧**已配置的上限，不能扩大：
 - 取消抛 `DOMException`（`name: "AbortError"`）；超时抛 `DOMException`（`name: "TimeoutError"`）。绝不把取消/超时伪装成 `kept`/`compacted`。
 - 工具层把取消继续上抛；超时变成固定错误 `iot-thoughts: timed out`，其他内部错误变成 `iot-thoughts: could not compact the notes`（不回显原文）。
 
+## Owner 图形配置
+
+模块加载后，在 **Menu → App → IoT 配置 / IoT settings**、启动器，或 rail 的 `IoT 配置` 按钮打开页面（页面 id `settings`）。浏览器端只调用本模块自己的三条 owner-only 路由：
+
+| 路由                              | 用途                                                                                                       |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `GET /api/x/iot-thoughts/config`  | 读取 `stored`、`effective`、`defaults`、`environmentOverrides`、`sources`、`revision`、`runtime`、`limits` |
+| `POST /api/x/iot-thoughts/config` | 只接受 `{ settings: 完整 Config, revision }`；成功返回同一视图                                             |
+| `POST /api/x/iot-thoughts/reset`  | 只接受 `{ confirm: true, revision }`，写回保存的默认值；env 仍优先                                         |
+
+- 页面显示每个字段的含义、范围、单位（UTF-16 单元 / 节点 / 毫秒）、默认值、保存值、生效值和来源（默认/已保存/环境）。
+- 保存会检查 revision；其他标签页或 reload 后的旧 revision 返回 `409`，不会覆盖。两个共享同一数据目录的 factory 通过固定锁文件 `x.iot-thoughts/config.lock` 串行写入，并在锁内重读磁盘 revision；超时返回 `409 busy`，不盲目删除外来/陈旧锁。
+- 写入先写临时文件、`fsync`、再原子 `rename`；提交点之前失败不会改变内存中的生效值。GET 和每次工具调用会重读自己的文件，因此旧版本刚提交后不会继续使用陈旧值；外部文件无效时 fail closed，不重置。
+- 重置需要页面上的二次确认；它只恢复**保存值**，不会让 env 覆盖失效。插件开关和卸载仍在 Menu → Extensions，不在本页面。
+- 环境变量由 Pocket 进程启动时继承；GUI 不能修改它，改变 env 需要以新环境启动/重启 Pocket。
+
 ## 安装（本次不执行生产安装）
 
-单文件 drop-in：`iot-thoughts.ts`。宿主必须提供 `host.text.defang`（Pi Pocket 0.14.0+），本模块声明 `pocketApi = 1`，已在 Pi Pocket 0.18.0 上核对。
+drop-in 是 `iot-thoughts.ts` 加同目录的 `iot-thoughts/` 浏览器目录（页面与样式）。宿主必须提供 `host.text.defang`、`host.dataDir`、`web.route` 与 `web.client`（Pi Pocket 0.20.0+），本模块声明 `pocketApi = 2`，工具返回 `output`，已在 Pi Pocket 0.20.0 上核对。
 
 ```bash
 # 开发：只在本项目内建立到现有 Pi Pocket 的符号链接，不复制、不下载
@@ -181,7 +200,7 @@ npm run link:pocket            # 可用 POCKET_ROOT=... 指定别的 Pocket 检�
 
 安装由 Owner 在审阅完整单文件后手动复制到其隔离 extensions 目录，然后在 **Menu → Extensions** 启用（drop-in 默认关闭）。生产安装、启用、推送均不在本仓库脚本范围内。详见 [`docs/install.md`](docs/install.md)。
 
-- 宿主要求：Pi Pocket 0.18.0 已核对；`pocketApi = 1`；Node **>= 22.19**（本机实际验证 **26.10.0**）。
+- 宿主要求：Pi Pocket 0.20.0 已核对；`pocketApi = 2`；Node **>= 22.19**（本机实际验证 **26.10.0**）。
 - `link-pocket` 只写本项目的 `node_modules/` 与 `_pocket.d.ts`，发现 `node_modules` 是符号链接或非目录时直接拒绝，不删除、不改向。
 
 ## 开发检查

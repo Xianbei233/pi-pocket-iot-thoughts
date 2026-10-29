@@ -1,0 +1,10 @@
+{
+  "pid": 4172891,
+  "root": "/tmp/pi-pocket-test-ipucaG",
+  "data": "/tmp/pi-pocket-test-ipucaG/ui-data",
+  "base": "http://127.0.0.2:32913",
+  "ownerLogin": "http://127.0.0.2:32913/login?token=uVfjGaAuvrTicdwDJCIM--171kzNXsQu",
+  "guestLogin": "http://127.0.0.2:32913/login?token=TL9ea-_DV5X9upioQOpZM1CmGC8D7VEP",
+  "candidate": "/home/xianbei233/Work/pi-pocket-iot-thoughts/dist/config-ui-0.2.0/pi-pocket-iot-thoughts-0.2.0.tgz",
+  "expiresAfterSeconds": 1800
+}

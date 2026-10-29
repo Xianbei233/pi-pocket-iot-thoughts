@@ -1,0 +1,73 @@
+
+> pi-pocket-iot-thoughts@0.1.0 test
+> node --test test/*.test.ts
+
+✔ config defaults are exact and frozen (3.293943ms)
+✔ config rejects hostile objects, unknown fields, bad types and unsafe bounds without echo (2.538954ms)
+✔ runtime direct calls validate config/options/text rather than relying on TS or schema (1.784036ms)
+✔ deduplicates visible notes; important negative/pending/decision numeric sentences are grounded (46.3176ms)
+✔ UTF16 emoji and CRLF offsets exclude source labels (10.854234ms)
+✔ all profiles retain polarity/source evidence without inventing completed plans (20.428898ms)
+✔ empty/short/disabled and not-shorter preserve exact original (3.838568ms)
+✔ insufficient output or node budget keeps all important source rather than dropping it (6.301255ms)
+✔ fenced repeated code and factual tool output remain intact (0.810164ms)
+✔ pre-abort and active abort reject, do not return apparent success (6.239236ms)
+✔ concurrent calls cannot leak or reuse another input (6.057228ms)
+✔ optional tool is replay-safe, read-only and has a closed two-field schema (3.614795ms)
+✔ tool calls host defang and warns alongside untrusted result (2.865743ms)
+✔ factory config is read once and malformed env fails closed without echoing content (2.104399ms)
+✔ dispose cancels active tool and forbids calls using disposed factory (20.387134ms)
+✔ caller abort cancels tool and does not retain listeners or timers (13.748124ms)
+✔ link script refuses directory-symlink node_modules without modifying external target (259.650315ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (255.729962ms)
+✔ link script refuses regular-file node_modules without modifying external target (144.055572ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (168.018949ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (316.410782ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (160.973181ms)
+✔ offline pack refuses symlink payload manifest.json (2148.624146ms)
+✔ offline pack rejects a tampered source digest (153.303099ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (4891.11132ms)
+✔ actual offline tar install, real loader/faux tool turns, bounds and lifecycle (10426.150602ms)
+✔ direct options reject unknown permissions (15.77877ms)
+✔ direct options reject array (3.642383ms)
+✔ direct options reject null (0.496365ms)
+✔ direct options reject inherited (0.224471ms)
+✔ direct options reject symbol key (7.569301ms)
+✔ input over configured max rejects even enabled=true (8.574462ms)
+✔ input over configured max rejects even enabled=false (14.004443ms)
+✔ deployment profile is applied when options omit profile and reported behavior agrees (218.477881ms)
+✔ all eight bilingual label families have exact label-excluding source offsets (131.525209ms)
+✔ identical text with opposing labels does not lose its negative semantics (16.846999ms)
+✔ conservative inference 尚未决定采用A。 (23.835426ms)
+✔ conservative inference 不支持采用A。 (28.770788ms)
+✔ conservative inference 计划采用A。 (26.803977ms)
+✔ unverified/verified-looking prose must never set verified true (33.764538ms)
+✔ deadline timeout is an error rather than a false kept/compacted success (11.13374ms)
+✔ negative and undecided prose is conservatively labelled: We do not support option A. (9.003988ms)
+✔ negative and undecided prose is conservatively labelled: We have not yet decided whether to choose A. (8.92849ms)
+✔ negative and undecided prose is conservatively labelled: No decision has been made. (12.269576ms)
+✔ negative and undecided prose is conservatively labelled: 还未决定采用A。 (14.84373ms)
+✔ exact production request retains all eight grounded categories and emoji with default full profile (19.961798ms)
+✔ true negation remains critical under a one-node budget: 无备份。 (5.451002ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无备份。 (8.363541ms)
+✔ true negation remains critical under a one-node budget: 无权限。 (3.78032ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无权限。 (2.637641ms)
+✔ true negation remains critical under a one-node budget: 无法执行。 (1.167962ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无法执行。 (1.378675ms)
+✔ true negation remains critical under a one-node budget: 无批准。 (3.414909ms)
+✔ true negation triggers kept fallback when critical nodes exceed budget: 无批准。 (2.20113ms)
+✔ 无害 does not exempt a separate true negation: 无害样本不获批准。 (4.672128ms)
+✔ 无害 does not exempt a separate true negation: 无害样本仍无权限。 (2.890048ms)
+ℹ tests 56
+ℹ suites 0
+ℹ pass 56
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 16851.150929
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

@@ -14,6 +14,8 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const shipped = [
     "package.json",
     "iot-thoughts.ts",
+    "iot-thoughts/index.js",
+    "iot-thoughts/style.css",
     "config.example.json",
     "README.md",
     "LICENSE",

@@ -1,0 +1,10 @@
+rollback_start=2026-10-23T15:49:04+08:00
+precheck_ok path=/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts ino=5498864 nlink=1 size=29267 sha256=b4564f4ee0a7db8a753459b97cc277a3f85ac158ecfbc55c8171cb89e9f1fdaf
+precheck_exit=0
+removed path=/home/xianbei233/.pi-pocket/extensions/iot-thoughts.ts ino=5498864 sha256=b4564f4ee0a7db8a753459b97cc277a3f85ac158ecfbc55c8171cb89e9f1fdaf
+unlink_exit=0
+target_absent=ok
+{"other_files_unchanged":true,"added":[],"removed":[]}
+inventory_compare_exit=0
+config_sha256=b2a029ad6e57017f13cf3264743409153666030195e50163a210b4664beb38bd backup_sha256=319577372d628d053c940694a08a2515df21d0d73e8f467759cc6766136c3273 same=false (not overwritten)
+rollback_done=2026-10-23T15:49:04+08:00

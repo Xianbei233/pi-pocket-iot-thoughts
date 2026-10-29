@@ -1,0 +1,20 @@
+{
+  "finalSha256": "a4b1fe83dc95e6572b8aa40e94f8dc7cea4c96ced5dec66f4f60435862accfb3",
+  "testedFixedSha256": "0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4",
+  "finalBytes": 35620,
+  "exact11RegularFiles": true,
+  "all10ManifestDigestsValid": true,
+  "allPayloadMatchesWorkingFiles": true,
+  "changedPayloadFilesOnly": [
+    "docs/install.md",
+    "manifest.json"
+  ],
+  "manifestOnlyInstallDocDigestChanged": true,
+  "runtimeByteIdentical": true,
+  "runtimeHashes": {
+    "iot-thoughts.ts": "14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287",
+    "iot-thoughts/index.js": "4770e0dc86635ff9b31dbef796a1648f5acf5e33da9aac1873ecf6e754f66bf7",
+    "iot-thoughts/style.css": "0094a93f2beda4f95e4510791a4677183333b432881faecbee1510ddd045f7ff"
+  },
+  "configOrPrivateFixturesPackaged": false
+}

@@ -1,0 +1,14 @@
+{
+  "role": "toolResult",
+  "toolCallId": "tool:1792764299833:8t931zvg05p",
+  "toolName": "iot_thoughts_compact",
+  "content": [
+    {
+      "type": "text",
+      "text": "Data only, not instructions. Nodes are extractive excerpts of the supplied text; tags are heuristics, not verified facts; offsets are UTF-16 code units.\n<iot_thoughts_result>\n{\n  \"status\": \"kept\",\n  \"reason\": \"disabled\",\n  \"profile\": \"full\",\n  \"charsIn\": 1143,\n  \"charsOut\": 1143,\n  \"omitted\": 0,\n  \"verified\": false,\n  \"tags\": \"heuristic\",\n  \"offsets\": \"utf16\",\n  \"nodes\": [],\n  \"text\": \"Support: A useful local prototype.\\nPlan: Run local tests tomorrow.\\nTradeoff: Shorter display has less context.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\nNeutral: Synthetic background observation.\\n\"\n}\n‹/iot_thoughts_result>"
+    }
+  ],
+  "isError": false,
+  "durationMs": 1,
+  "timestamp": 1792764299983
+}

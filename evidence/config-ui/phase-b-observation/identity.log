@@ -1,0 +1,17 @@
+14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287  iot-thoughts.ts
+4770e0dc86635ff9b31dbef796a1648f5acf5e33da9aac1873ecf6e754f66bf7  iot-thoughts/index.js
+0094a93f2beda4f95e4510791a4677183333b432881faecbee1510ddd045f7ff  iot-thoughts/style.css
+49ea87dddf3963946f7c51e899de6023c62e7827d87e97eea814b885c340f7d5  manifest.json
+0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4  dist/config-ui-0.2.0-fixed/pi-pocket-iot-thoughts-0.2.0.tgz
+b27fb3444cbaf19c483b796ae853cf0466616abcd20724c11797ff867904b4ca  evidence/phase-a-added-cases.tmp
+b27fb3444cbaf19c483b796ae853cf0466616abcd20724c11797ff867904b4ca  evidence/phase-a-preserved/phase-a-added-cases.tmp
+{
+  "candidateSha256": "0f8cee40144ac4f315b7390424981d2b8510cdb345210af361d39753146f1ce4",
+  "bytes": 35548,
+  "exact11RegularFiles": true,
+  "all10ManifestDigestsValid": true,
+  "clientHashesValid": true,
+  "allPayloadEqualsWorkingFiles": true,
+  "coreRegressionBytesPreserved": true,
+  "configNotPackaged": true
+}

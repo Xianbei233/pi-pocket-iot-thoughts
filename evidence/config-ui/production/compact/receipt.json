@@ -1,0 +1,47 @@
+{
+  "phase": "compact",
+  "authorizedCalls": 1,
+  "callCount": 1,
+  "startedAt": "2026-10-23T14:47:09.402Z",
+  "candidateSha256": "a4b1fe83dc95e6572b8aa40e94f8dc7cea4c96ced5dec66f4f60435862accfb3",
+  "sourceSha256": "14cdef54b0f0584199e0005a4dceb48af9b727eb7077ec56f71ea19a6f996287",
+  "plannerSuppliedView": {
+    "storedAndEffective": {
+      "enabled": true,
+      "profile": "compact",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 3,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "revisionPrefix": "8e04c064cbc0",
+    "ui": "normal mobile visible entry, actual Switch on, compact profile, maxNodes3, Save",
+    "moduleEnabled": true
+  },
+  "profileArgumentOmitted": true,
+  "toolSucceeded": true,
+  "rawDurable": true,
+  "pass": true,
+  "errors": [],
+  "executedAt": "2026-10-23T14:47:09.406Z",
+  "checks": {
+    "profileArgumentOmitted": true,
+    "inputAtLeast400": true,
+    "statusCompacted": true,
+    "savedProfileCompact": true,
+    "oneToThreeNodes": true,
+    "allGrounded": true,
+    "allValidUtf16Bounds": true,
+    "verifiedFalse": true,
+    "strictShorter": true
+  },
+  "nodeCount": 3,
+  "hashes": {
+    "requestTextUtf8Sha256": "4a25e795198b4ea703803769237c8f4744a46bd6b70a96f9e3a0edafadd0d132",
+    "rawReturnSha256": "c6c09ecbedefa689bc1b8dfb99d30cdee8bf019056941d8f8e7450ce2d8877ff",
+    "rawReturnBytes": 988
+  },
+  "finishedAt": "2026-10-23T14:47:09.453Z"
+}

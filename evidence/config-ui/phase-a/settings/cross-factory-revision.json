@@ -1,0 +1,335 @@
+{
+  "results": [
+    {
+      "status": "fulfilled",
+      "view": {
+        "schemaVersion": 1,
+        "stored": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 4,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "effective": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 4,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "defaults": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 8,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "environmentOverrides": {},
+        "sources": {
+          "enabled": "saved",
+          "profile": "saved",
+          "minChars": "saved",
+          "maxInputChars": "saved",
+          "maxNodes": "saved",
+          "maxOutputChars": "saved",
+          "timeoutMs": "saved"
+        },
+        "revision": "817104397cfa2a21f15bb530181ee3d5419f1813058ead10391f3b1e77aa913d",
+        "runtime": {
+          "moduleLoaded": true,
+          "algorithmEnabled": true,
+          "hotApply": true
+        },
+        "limits": {
+          "minChars": {
+            "min": 0,
+            "max": 64000,
+            "unit": "UTF-16 code units"
+          },
+          "maxInputChars": {
+            "min": 100,
+            "max": 64000,
+            "unit": "UTF-16 code units"
+          },
+          "maxNodes": {
+            "min": 1,
+            "max": 16,
+            "unit": "nodes"
+          },
+          "maxOutputChars": {
+            "min": 100,
+            "max": 64000,
+            "unit": "UTF-16 code units",
+            "mustNotExceed": "maxInputChars"
+          },
+          "timeoutMs": {
+            "min": 10,
+            "max": 5000,
+            "unit": "ms"
+          },
+          "profiles": [
+            "compact",
+            "balanced",
+            "full"
+          ]
+        }
+      }
+    },
+    {
+      "status": "fulfilled",
+      "view": {
+        "schemaVersion": 1,
+        "stored": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 5,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "effective": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 5,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "defaults": {
+          "enabled": true,
+          "profile": "full",
+          "minChars": 400,
+          "maxInputChars": 24000,
+          "maxNodes": 8,
+          "maxOutputChars": 8000,
+          "timeoutMs": 1000
+        },
+        "environmentOverrides": {},
+        "sources": {
+          "enabled": "saved",
+          "profile": "saved",
+          "minChars": "saved",
+          "maxInputChars": "saved",
+          "maxNodes": "saved",
+          "maxOutputChars": "saved",
+          "timeoutMs": "saved"
+        },
+        "revision": "ae3240a2e26bb5ebe47afc2fd661dc16426a4034c0a80dec4f42e98a98d733e6",
+        "runtime": {
+          "moduleLoaded": true,
+          "algorithmEnabled": true,
+          "hotApply": true
+        },
+        "limits": {
+          "minChars": {
+            "min": 0,
+            "max": 64000,
+            "unit": "UTF-16 code units"
+          },
+          "maxInputChars": {
+            "min": 100,
+            "max": 64000,
+            "unit": "UTF-16 code units"
+          },
+          "maxNodes": {
+            "min": 1,
+            "max": 16,
+            "unit": "nodes"
+          },
+          "maxOutputChars": {
+            "min": 100,
+            "max": 64000,
+            "unit": "UTF-16 code units",
+            "mustNotExceed": "maxInputChars"
+          },
+          "timeoutMs": {
+            "min": 10,
+            "max": 5000,
+            "unit": "ms"
+          },
+          "profiles": [
+            "compact",
+            "balanced",
+            "full"
+          ]
+        }
+      }
+    }
+  ],
+  "disk": {
+    "enabled": true,
+    "profile": "full",
+    "minChars": 400,
+    "maxInputChars": 24000,
+    "maxNodes": 5,
+    "maxOutputChars": 8000,
+    "timeoutMs": 1000
+  },
+  "a": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 4,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 4,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "sources": {
+      "enabled": "saved",
+      "profile": "saved",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "saved",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "817104397cfa2a21f15bb530181ee3d5419f1813058ead10391f3b1e77aa913d",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": true,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  },
+  "b": {
+    "schemaVersion": 1,
+    "stored": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 5,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "effective": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 5,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "defaults": {
+      "enabled": true,
+      "profile": "full",
+      "minChars": 400,
+      "maxInputChars": 24000,
+      "maxNodes": 8,
+      "maxOutputChars": 8000,
+      "timeoutMs": 1000
+    },
+    "environmentOverrides": {},
+    "sources": {
+      "enabled": "saved",
+      "profile": "saved",
+      "minChars": "saved",
+      "maxInputChars": "saved",
+      "maxNodes": "saved",
+      "maxOutputChars": "saved",
+      "timeoutMs": "saved"
+    },
+    "revision": "ae3240a2e26bb5ebe47afc2fd661dc16426a4034c0a80dec4f42e98a98d733e6",
+    "runtime": {
+      "moduleLoaded": true,
+      "algorithmEnabled": true,
+      "hotApply": true
+    },
+    "limits": {
+      "minChars": {
+        "min": 0,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxInputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units"
+      },
+      "maxNodes": {
+        "min": 1,
+        "max": 16,
+        "unit": "nodes"
+      },
+      "maxOutputChars": {
+        "min": 100,
+        "max": 64000,
+        "unit": "UTF-16 code units",
+        "mustNotExceed": "maxInputChars"
+      },
+      "timeoutMs": {
+        "min": 10,
+        "max": 5000,
+        "unit": "ms"
+      },
+      "profiles": [
+        "compact",
+        "balanced",
+        "full"
+      ]
+    }
+  }
+}

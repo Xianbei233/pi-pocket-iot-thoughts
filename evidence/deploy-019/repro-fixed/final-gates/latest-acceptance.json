@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "scope": "local final preflight only",
+  "candidateSha256": "31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e",
+  "typeCheckHistory": [
+    {
+      "command": "npm run check",
+      "osBoundSeconds": 45,
+      "exit": 124,
+      "receipt": "check.receipt"
+    },
+    {
+      "command": "npm run check",
+      "osBoundSeconds": 45,
+      "exit": 0,
+      "ranAlone": true,
+      "receipt": "check-recheck.receipt",
+      "hashesUnchanged": true
+    }
+  ],
+  "fullSuite": {
+    "total": 56,
+    "original": 45,
+    "added": 11,
+    "exit": 0
+  },
+  "exactFixture": {
+    "repeatCount": 2,
+    "bothStrictPass": true,
+    "byteIdentical": true,
+    "requestUtf16Length": 684,
+    "requestSha256": "eaaf9735e58cd8c007f42da892b2ba391795e1b752def522d5fb8d68695b6c2e",
+    "rawDirectories": [
+      "run-1",
+      "run-2"
+    ]
+  },
+  "productionMutated": false,
+  "productionAcceptance": "not performed",
+  "usage": "not obtained"
+}

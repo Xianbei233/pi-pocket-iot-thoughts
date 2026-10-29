@@ -1,0 +1,20 @@
+✔ link script refuses directory-symlink node_modules without modifying external target (46.711592ms)
+✔ link script refuses dangling-symlink node_modules without modifying external target (40.313325ms)
+✔ link script refuses regular-file node_modules without modifying external target (42.30081ms)
+✔ offline pack refuses unexpected docs/private.txt instead of including prefix contents (55.417081ms)
+✔ offline pack refuses unexpected scripts/extra.mjs instead of including prefix contents (53.808138ms)
+✔ offline pack refuses unexpected iot-thoughts/private.txt instead of including prefix contents (60.558756ms)
+✔ offline pack refuses symlink payload iot-thoughts.ts (69.43815ms)
+✔ offline pack refuses symlink payload manifest.json (456.156086ms)
+✔ offline pack refuses symlink payload iot-thoughts/index.js (60.592839ms)
+✔ offline pack refuses symlink payload iot-thoughts/style.css (54.837604ms)
+✔ offline pack rejects a tampered source digest (62.228601ms)
+✔ actual offline pack succeeds only with complete hashed manifest and allowlisted regular payload (876.005386ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2018.042259

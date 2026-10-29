@@ -1,0 +1,30 @@
+{
+  "startedAt": "2026-10-23T08:29:19.764Z",
+  "authorizedOneCall": true,
+  "candidateSha256": "31237760ab17934878dc21c338fe4a417541e0eefdaedcc25270cb1a5af3464e",
+  "sourceSha256": "cc254c7925958797c25961bfeceb857b13d958d00cb00bd23f4b489ac0a67ed4",
+  "expectedRequestSha256": "eaaf9735e58cd8c007f42da892b2ba391795e1b752def522d5fb8d68695b6c2e",
+  "plannerSuppliedEnable": {
+    "at": "2026-10-23T08:27:44.959Z",
+    "http": 200,
+    "enabled": true,
+    "exposedTool": "iot_thoughts_compact",
+    "modules": 28,
+    "enabledModules": 26,
+    "errors": 0,
+    "changedOtherModules": [],
+    "installedInode": 5549717,
+    "preIoTBaseline": {
+      "modules": 27,
+      "enabled": 25,
+      "errors": 0
+    }
+  },
+  "callCount": 1,
+  "status": "not started",
+  "toolSucceeded": true,
+  "rawDurable": true,
+  "errors": [],
+  "paidProviderProbes": 0,
+  "executedAt": "2026-10-23T08:29:19.769Z"
+}
